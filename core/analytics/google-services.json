@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1037242949283",
+    "firebase_url": "https://ivaapplication.firebaseio.com",
+    "project_id": "ivaapplication",
+    "storage_bucket": "ivaapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037242949283:android:6ed630a3966a2223",
+        "android_client_info": {
+          "package_name": "com.jabozaroid.abopay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037242949283-glm4jceo08vtk8am94e5n9conqabsi64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDGI8JplIt1AMgmIoi2WljMOlnayCsxFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037242949283-6flfkf576uga6b10fmjeoqunfqeirgvb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1037242949283-rgsst8fil0hflv4drfv1u0g2fpqppuaq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ou.seeb.internal-test.luxi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

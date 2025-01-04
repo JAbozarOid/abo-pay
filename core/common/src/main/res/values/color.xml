@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="melli_up">#F9BA48</color>
+    <color name="melli_Down">#D38800</color>
+
+    <color name="tosee_saderat_up">#68BD72</color>
+    <color name="tosee_saderat_down">#036C10</color>
+
+    <color name="sepah_up">#E96619</color>
+    <color name="sepah_dwon">#AC4000</color>
+
+
+    <color name="keshavarzi_up">#7FC586</color>
+    <color name="keshavarzi_down">#35663A</color>
+
+    <color name="maskan_up">#F15922</color>
+    <color name="maskan_down">#BD4216</color>
+
+    <color name="post_bank_iran_up">#F15922</color>
+    <color name="post_bank_iran_down">#BD4216</color>
+
+    <color name="tosee_taavon_up">#0A8992</color>
+    <color name="tosee_taavon_down">#146066</color>
+
+    <color name="eghtesad_novin_up">#9085BF</color>
+    <color name="eghtesad_novin_down">#65429A</color>
+
+    <color name="parsian_up">#C4888B</color>
+    <color name="parsian_down">#A41920</color>
+
+    <color name="pasargad_up">#F4D055</color>
+    <color name="pasargad_down">#A98300</color>
+
+    <color name="karafarin_up">#53A65C</color>
+    <color name="karafarin_down">#367164</color>
+
+    <color name="saman_up">#13A5DD</color>
+    <color name="saman_down">#2360AC</color>
+
+    <color name="sina_up">#1A94C9</color>
+    <color name="sina_down">#146A90</color>
+
+    <color name="sarmayeh_up">#7D79C7</color>
+    <color name="sarmayeh_down">#272275</color>
+
+    <color name="shahr_up">#E3382B</color>
+    <color name="shahr_down">#973028</color>
+
+    <color name="dey_up">#008A9F</color>
+    <color name="dey_down">#1D6069</color>
+
+    <color name="saderat_up">#6F76EE</color>
+    <color name="saderat_down">#271467</color>
+
+    <color name="melat_up">#FABA58</color>
+    <color name="melat_down">#C41139</color>
+
+    <color name="tejarat_up">#5F99E3</color>
+    <color name="tejarat_down">#0B4DA2</color>
+
+    <color name="refah_up">#578DB5</color>
+    <color name="refah_down">#004A80</color>
+
+    <color name="gareshgary_up">#E59092</color>
+    <color name="gareshgary_down">#B72B2D</color>
+
+    <color name="iran_zamin_up">#E01D90</color>
+    <color name="iran_zamin_down">#794A9D</color>
+
+    <color name="khavar_miyane_up">#F29200</color>
+    <color name="khavar_miyane_down">#B97307</color>
+
+    <color name="ayande_up">#CF9E2A</color>
+    <color name="ayande_down">#7F513D</color>
+
+    <color name="moasese_etebary_tosee_up">#CB8583</color>
+    <color name="moasese_etebary_tosee_down">#871E1A</color>
+
+    <color name="moasese_etebary_noor_up">#8BD2E3</color>
+    <color name="moasese_etebary_noor_down">#1A5BC1</color>
+
+    <color name="moasese_etebary_melal_up">#6683FE</color>
+    <color name="moasese_etebary_melal_down">#3B43F2</color>
+
+    <color name="mehr_iran_up">#20B168</color>
+    <color name="mehr_iran_down">#0E8649</color>
+
+    <color name="resalat_up">#009AAE</color>
+    <color name="resalat_down">#0C6671</color>
+
+    <color name="sanat_va_maadan_up">#B09343</color>
+    <color name="sanat_va_maadan_down">#91753F</color>
+
+    <color name="blue_up">#13A5DD</color>
+    <color name="blue_down">#2360AC</color>
+
+    <color name="base">#FFDBDBDB</color>
+<!--    <color name="mellat">#FFFEACAD</color>-->
+<!--    <color name="eghtesad_novin">#837DB8</color>-->
+<!--    <color name="ayande">#FFF9316D</color>-->
+<!--    <color name="shahr">#EBF37E</color>-->
+<!--    <color name="pasargad">#F892C5</color>-->
+<!--    <color name="parsian">#87A0B1</color>-->
+<!--    <color name="saman">#EB4368EC</color>-->
+<!--    <color name="sepah">#BF3B9C26</color>-->
+<!--    <color name="mehr">#C58A6A</color>-->
+</resources>
+

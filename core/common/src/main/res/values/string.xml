@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="empty_string" />
+
+    <!-- common -->
+    <string name="error_fetch_data">خطا در دریافت اطلاعات</string>
+    <string name="error_send_data">خطا در انتقال اطلاعات</string>
+    <string name="error_delete_data">خطا در حذف اطلاعات</string>
+    <string name="error_edit_data">خطا در ویرایش اطلاعات</string>
+    <string name="inquiry">استعلام</string>
+    <string name="back">برگشت</string>
+    <string name="confirm">تایید</string>
+    <string name="cancel">انصراف</string>
+    <string name="pay">پرداخت</string>
+    <string name="title">عنوان</string>
+    <string name="title_optional">عنوان (اختیاری)</string>
+    <string name="add">افزودن</string>
+    <string name="continue_title">ادامه</string>
+    <string name="amount_rial">مبلغ(ریال)</string>
+    <string name="amount">مبلغ</string>
+    <string name="phone_number">شماره همراه</string>
+    <string name="mobile_number">شماره موبایل</string>
+    <string name="telephone_number">شماره تلفن</string>
+    <string name="select_operator_if_tarabord">در صورتیکه ترابرد کرده اید، اپراتور خود را انتخاب کنید</string>
+    <string name="search">جستجو</string>
+    <string name="month">ماه</string>
+    <string name="year">سال</string>
+    <string name="edit">ویرایش</string>
+    <string name="duplicate_error">این کارت قبلا اضاقه شده است</string>
+
+    <!-- Home -->
+    <string name="bottom_nav_item_profile">پروفایل</string>
+    <string name="bottom_nav_item_iva">ابو پی\u200cپلاس</string>
+    <string name="bottom_nav_item_home">خانه</string>
+    <string name="bottom_nav_item_wallet">کیف پول</string>
+    <string name="bottom_nav_item_services">خدمات</string>
+
+    <!-- Internet -->
+    <string name="internet_main_title">بسته اینترنت</string>
+    <string name="invalid_phone_number">شماره همراه نامعتبر میباشد</string>
+    <string name="delete_package_confirm">آیا از حذف بسته مطمئن هستید؟</string>
+    <string name="frequent_package">بسته های پرتکرار</string>
+    <string name="no_package_alert">هنوز بسته اینترنتی در ابو پی خرید نکرده اید!\n همین حالا میتوانید شروع کنید.</string>
+    <string name="delete_package">حذف بسته</string>
+    <string name="select_sim_type">انتخاب نوع سیم کارت</string>
+    <string name="daily">روزانه</string>
+    <string name="weekly">هفتگی</string>
+    <string name="monthly">ماهانه</string>
+    <string name="with_calculated_vat">با احتساب ۱۰ درصد مالیات</string>
+    <string name="rial">ریال</string>
+
+    <!-- Charge -->
+    <string name="charge_main_title">شارژ</string>
+    <string name="select_charge_alert">شارژ مورد نظر خود را انتخاب کنید</string>
+    <string name="snack_error_delete_number">خطا در حذف شماره</string>
+    <string name="snack_success_delete_number">حذف شماره با موفقیت انجام شد</string>
+    <string name="delete_charge_confirm">آیا از حذف شارژ مطمئن هستید؟</string>
+    <string name="wonderful_charge">شگفت انگیز</string>
+    <string name="regular_charge">عادی</string>
+    <string name="frequent_charge">شارژهای پرتکرار</string>
+    <string name="select_charge">انتخاب شارژ</string>
+    <string name="delete_charge">حذف شارژ</string>
+    <string name="no_charge_alert">هنوز شارژ در ابو پی خرید نکرده اید!\n همین حالا میتوانید شروع کنید.</string>
+
+    <!-- Bill -->
+    <string name="bill_main_title">قبض</string>
+    <string name="empty_phone_number">شماره موبایل نمیتواند خالی باشد</string>
+    <string name="incompatible_bill_info">شناسه قبض و شناسه پرداخت همخوانی ندارد</string>
+    <string name="success_add_bill">قبض با موفقیت اضافه شد</string>
+    <string name="success_delete_bill">قبض با موفقیت حذف گردید</string>
+    <string name="success_edit_bill">قبض با موفقیت ویرایش گردید</string>
+    <string name="bill_title">پرداخت قبض</string>
+    <string name="bill_inquiry">استعلام قبض</string>
+    <string name="frequent_bill">قبض های  پرتکرار</string>
+    <string name="pay_with_reference">پرداخت با شناسه</string>
+    <string name="bill_description">هنوز قبض پرداخت شده ای در ابو پی ندارید! \n همین حالا میتوانید شروع کنید.</string>
+    <string name="scan_with_id">اسکن شناسه</string>
+    <string name="delete_bill_message">آیا از حذف قبض مطمئن هستید ؟</string>
+    <string name="payment_with_id">پرداخت با شناسه</string>
+    <string name="bill_id">شناسه قبض</string>
+    <string name="payment_id">شناسه پرداخت</string>
+    <string name="bill_id_place_holder">شناسه قبض را وارد کنید</string>
+    <string name="payment_id_place_holder">شناسه پرداخت را وارد کتید</string>
+    <string name="edite_bill">ویرایش قبض</string>
+    <string name="name_of_bill_place_holder">نام قبض را وارد کنید</string>
+    <string name="bill_information">اطلاعات قبض</string>
+    <string name="delete_bill">حذف قبض</string>
+    <string name="phone_number_with_pre">شماره تلفن(همراه با پیش شماره)</string>
+    <string name="phone_number_like_sample">شماره را مانند نمونه وارد کنید:12345678  021</string>
+    <string name="middle_period"> میان دوره</string>
+    <string name="final_period">پایان دوره</string>
+    <string name="free">رایگان</string>
+    <string name="bill_wage">کارمزد قبض</string>
+    <string name="payable">مبلغ قابل پرداخت</string>
+    <string name="payment_deadline">مهلت پرداخت</string>
+
+    <!-- CardToCard -->
+    <string name="enter_price">لطفا مبلغ را وارد کنید</string>
+    <string name="card_name_optional">نام کارت (اختیاری)</string>
+    <string name="entry_card_title">عنوان کارت را وارد کنید</string>
+    <string name="add_card">افزودن کارت</string>
+    <string name="shaparak_rules_alert">کاربرگرامی،
+با توجه به قانون جدید بانک مرکزی، بانک شما به سامانه
+هاب شاپرک افزوده شده است. لازم است ابتدا اطلاعات
+کارت خود را در سامانه شاپرک ثبت کنید و پس از بازگشت
+به برنامه، عملیات خود را ادامه دهید</string>
+    <string name="destination_cards">کارت های مقصد</string>
+    <string name="card_number">شماره کارت</string>
+    <string name="save_destination_card">ذخیره کارت مقصد</string>
+    <string name="destination_card">کارت مقصد</string>
+    <string name="card_to_card">کارت به کارت</string>
+    <string name="description">توضیحات</string>
+    <string name="enter_description">توضیحات را وارد کنید</string>
+    <string name="cvv2_hint">کد را وارد کنید</string>
+    <string name="cvv2">CVV2</string>
+    <string name="c2c_confirmation">تایید کارت به کارت</string>
+    <string name="agree_c2c_rules">آیا کارت به کارت با مشخصات زیر رو تایید می کنید؟</string>
+    <string name="frequent_transactions">تراکنش های پرتکرار</string>
+    <string name="successful_card_to_card">کارت به کارت با موفقیت انجام شد.</string>
+
+    <!-- Login -->
+    <string name="place_holder_phone_number">مانند نمونه : ۰۹۱۲۳۴۵۴۵۳۴</string>
+    <string name="place_holder_national_code">مانند نمونه : ۰۰۱۲۳۴۵۶۷۸</string>
+    <string name="place_holder_password">شامل اعداد، حروف کوچک و بزرگ و علایم</string>
+    <string name="enter_phone_number">لطفا شماره موبایل را وارد کنید</string>
+    <string name="enter_national_id">لطفا کد ملی را وارد کنید</string>
+    <string name="enter_password">رمز ورود را مطابق الگو وارد نمایید</string>
+    <string name="enter_confirm_password">تکرار رمزعبور را وارد نمایید</string>
+    <string name="enter_otp">لطفا رمز دریافتی را وارد کنید</string>
+    <string name="invalid_national_id">کد ملی وارد شده اشتباه  می باشد</string>
+    <string name="invalid_password">رمزعبور مطابق الگو نمیباشد</string>
+    <string name="invalid_confirm_password">تکرار رمزعبور مطابق رمز وارد شده نمیباشد</string>
+    <string name="please_enter_mobile"> : لطفا شماره همراه خود را وارد نمایید</string>
+    <string name="app_name">ابو پی</string>
+    <string name="login_rules">با ثبت نام و ورود قوانین و مقرات ابو پی را می پذیرم.</string>
+    <string name="otp_sent">کد فعال سازی ارسال شد، آن را وارد کنید</string>
+    <string name="login_notice">کاربر گرامی لطفا از شماره همراهی که به نام خودتان است، استفاده کنید</string>
+    <string name="send_otp">ارسال پیامک فعال سازی</string>
+    <string name="reagent_code">کد معرف</string>
+    <string name="reagent_code_place_holder">کد معرف خود را وارد کنید</string>
+    <string name="app_rules">شرایط و قوانین</string>
+    <string name="app_rules_extra">کاربری را خوانده و قبول دارم.</string>
+    <string name="enter_reagent_code">ورود کد معرف</string>
+    <string name="national_code">کد ملی</string>
+
+    <!-- Payment -->
+    <string name="payment_confirm">تایید پرداخت</string>
+    <string name="melli_bank">بانک ملی ایران</string>
+    <string name="sepah_bank">بانک سپه</string>
+    <string name="saderat_bank">بانک صادرات</string>
+    <string name="sanat_madan_bank">بانک صنعت و معدن</string>
+    <string name="keshavarzi_bank">بانک کشاورزی</string>
+    <string name="maskan_bank">بانک مسکن</string>
+    <string name="tosee_bank">بانک توسعه تعاون</string>
+    <string name="post_bank">پست بانک ایران</string>
+    <string name="en_bank">بانک اقتصاد نوین</string>
+    <string name="parsian_bank">بانک پارسیان</string>
+    <string name="pasargad_bank">بانک پاسارگاد</string>
+    <string name="karafarin_bank">بانک کارآفرین</string>
+    <string name="ansaar_bank">بانک سپه (انصار سابق)</string>
+    <string name="ayandeh_bank">بانک آینده</string>
+    <string name="mehreghtesad_bank">بانک مهراقتصاد</string>
+    <string name="iranzamin_bank">بانک ایران زمین</string>
+    <string name="resalat_bank">بانک رسالت</string>
+    <string name="gardeshgari_bank">بانک گردشگری</string>
+    <string name="hekmatiranian_bank">بانک سپه(حکمت سابق)</string>
+    <string name="mehriran_bank">بانک مهر ایران</string>
+    <string name="ghavamin_bank">بانک سپه(قوامین سابق)</string>
+    <string name="melal_bank">موسسه اعتباری ملل</string>
+    <string name="refah_bank">بانک رفاه</string>
+    <string name="tejarat_bank">بانک تجارت</string>
+    <string name="mellat_bank">بانک ملت</string>
+    <string name="toseesaderat_bank">بانک توسعه صادرات</string>
+    <string name="saman_bank">بانک سامان</string>
+    <string name="sina_bank">بانک سینا</string>
+    <string name="sarmayeh_bank">بانک سرمایه</string>
+    <string name="shahr_bank">بانک شهر</string>
+    <string name="dey_bank">بانک دی</string>
+    <string name="khavarmiane_bank">بانک خاورمیانه</string>
+    <string name="mehreeghtesad_bank">بانک سپه(مهر سابق)</string>
+    <string name="noor_bank">موسسه اعتباری نور</string>
+    <string name="kosar_bank">بانک سپه(کوثر سابق)</string>
+    <string name="tosee_institute">موسسه اعتباری توسعه</string>
+    <string name="share">اشتراک گذاری</string>
+    <string name="other">سایر بانک‌ها</string>
+
+    <string name="enter_card_number">لطفا شماره کارت را وارد کنید</string>
+    <string name="invalid_card_number">شماره کارت نامعتبراست</string>
+    <string name="needed_field">این فیلد الزامی است</string>
+    <string name="snack_sent_dynamic_password">رمز پویا ارسال شد</string>
+    <string name="save_in_frequent_transactions">ذخیره در تراکنش های پرتکرار</string>
+    <string name="payment_with_card">پرداخت با کارت</string>
+    <string name="wallet">کیف پول</string>
+    <string name="not_available_service_message">این سرویس در حال حاضر در دسترس نمی باشد</string>
+    <string name="payable_rial">مبلغ قابل پرداخت (ریال)</string>
+    <string name="successful_payment">پرداخت با موفقیت انجام شد.</string>
+
+    <!-- Balance -->
+    <string name="inquiry_balance_wage">کارمزد استعلام موجودی کارت</string>
+    <string name="inquiry_balance_wage_end"> است.</string>
+    <string name="equivalent_owner_sim">جهت استفاده از این سروcیس، هویت مالک کارت و سیم کارت باید یکسان باشد.</string>
+    <string name="balance_title">موجودی کارت</string>
+    <string name="date_and_time_title">تاریخ و ساعت</string>
+    <string name="bank_name_title">نام بانک</string>
+    <string name="reference_number_title">شماره ارجاع</string>
+    <string name="tracking_number_title">شماره پیگیری</string>
+    <string name="available_amount_title">قابل برداشت(ریال)</string>
+    <string name="success_balance_receipt_message">"استعلام موجودی با موفقیت انجام شد. "</string>
+    <string name="balanceTitle">موجودی کارت</string>
+    <string name="amount_title">موجودی(ریال):</string>
+    <string name="error">خطا!</string>
+    <string name="inquiry_wage_part1">کارمزد استعلام موجودی کارت</string>
+    <string name="inquiry_wage_part2"> است</string>
+    <string name="compatible_owner_sim">جهت استفاده از این سرویس، هویت مالک کارت و سیم کارت باید یکسان باشد.</string>
+
+    <!-- Intro -->
+    <string name="enter_title">ورود</string>
+    <string name="intro_title1">ابو پی</string>
+    <string name="intro_description1">ابو پی یک اپلیکیشن پرداخت امن با امکانات متنوع و منحصر به فرد است</string>
+    <string name="intro_title2">خدمات منحصر به فرد</string>
+    <string name="intro_description2">در ابو پی به خدمات بی نظیری چون پرداخت عوارض خروج از کشور و قبوض دولتی دسترسی دارید</string>
+    <string name="intro_title3">خلافی خودرو</string>
+    <string name="intro_description3">ریز خلافی های خودرو را به صورت رایگان استعلام و آن ها را پرداخت کنید</string>
+
+    <!-- design_system -->
+    <string name="untitled">untitled</string>
+    <string name="my_cards">کارت های من</string>
+    <string name="otp_title">رمز پویا</string>
+    <string name="vat_title">"با احتساب %1$s%% مالیات برارزش افزوده"</string>
+    <string name="add_new_card">افزودن کارت جدید</string>
+    <string name="card_visual_transformation_mask">0000  0000  0000  0000</string>
+    <string name="data_receive_error_message">خطا در دریافت اطلاعات از سرور</string>
+    <string name="try_again">تلاش مجدد</string>
+    <string name="source_card_number">شماره کارت مبدا</string>
+    <string name="target_card_owner">صاحب کارت مقصد</string>
+    <string name="target_card_number">شماره کارت مقصد</string>
+
+    <!-- confirmation Screen -->
+    <string name="amount_in_rial">مبلغ (به ریال)</string>
+
+    <!-- card_management -->
+    <string name="card_management_title">مدیریت کارت ها</string>
+    <string name="no_my_cards">هنوز کارت بانکی در ابو پی افزوده نشده است!\n
+        همین حالا امتحان کنید.</string>
+    <string name="no_destination_cards">هنوز کارت مقصدی در ابو پی افزوده نشده است!</string>
+    <string name="block_card">مسدود سازی</string>
+    <string name="block_card_subtitle">(مختص کارت بانک ملی)</string>
+    <string name="copy_card">کپی شماره کارت</string>
+    <string name="default_title">پیش فرض</string>
+    <string name="authenticate">احراز هویت</string>
+    <string name="delete">حذف</string>
+    <string name="card_number_saved_to_clipboard">شماره کارت در کلیپ برد ذخیره شد</string>
+    <string name="scan_card">اسکن کارت</string>
+    <string name="default_card_question">آیا به عنوان کارت پیش فرض انتخاب شود ؟</string>
+    <string name="delete_card_question">آیا با حذف کارت موافق هستید ؟</string>
+    <string name="delete_card">حذف کارت</string>
+    <string name="edit_card">ویرایش کارت</string>
+    <string name="card_name_error">نام کارت نباید خالی باشد</string>
+    <string name="card_name">نام کارت</string>
+    <string name="edit_destination_card">ویرایش کارت مقصد</string>
+    <string name="supporting_card_name">می‌توانید نام مد نظر خود را برای کارت تعریف کنید.</string>
+    <string name="default_card">کارت پیش فرض</string>
+    <string name="without_name">بدون نام</string>
+    <string name="successful_add_card">کارت با موفقیت اضافه گردید.</string>
+
+
+    <!-- kahroba -->
+    <string name="kahroba_card_description">در حال حاضر، کارتی جهت انجام این سرویس اضافه نشده است.</string>
+    <string name="kahroba_title_payment">پرداخت کهربا</string>
+    <string name="kahroba_supporting_bank_title">کارت های تحت پوشش</string>
+    <string name="default_kahroba_card">کارت پیش فرض کهربا</string>
+    <string name="select_card_title">انتخاب کارت</string>
+    <string name="enrollment_card">فعال سازی کارت</string>
+    <string name="understand_button_title">متوجه شدم</string>
+    <string name="helper_title">راهنمای پرداخت کهربا</string>
+    <string name="nfc_title_description">در حال انجام پرداخت ... </string>
+    <string name="nfc_description">جهت تکمیل فرآیند خرید، تلفن همراه خود را نزدیک کارتخوان نگاه دارید.</string>
+    <string name="select_card_description">از کارت های زیر برای پرداخت کهربا استفاده کنید.</string>
+    <string name="password">رمز عبور</string>
+    <string name="confirm_password">تکرار رمز عبور</string>
+
+
+</resources>

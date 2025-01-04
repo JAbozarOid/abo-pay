@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Pin the domain www.your-domain.com -->
+    <!-- Official Android N API -->
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">172.24.34.114</domain>
+<!--        <domain includeSubdomains="true">172.24.34.69</domain>-->
+        <domain includeSubdomains="true">cdn2.ivaapp.com</domain>
+
+    </domain-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">sadadpsp.ir</domain>
+
+        <pin-set>
+            <pin digest="SHA-256">irQF0JXEjgiU09XWa+G6gNlOvYFxdKTMPhQ8WjjYq2k=</pin>
+            <pin digest="SHA-256">wM3w7cZpoBia0cSfTJM3OD61FtcinSQQa1UO2JwoxQQ</pin>
+            <pin digest="SHA-256">IXPOcpbIoBjz/Gv/zeGw6CYhmoIaT+CJ3Mv6fAttN88=</pin>
+        </pin-set>
+        <!-- TrustKit Android API -->
+        <!-- Do not enforce pinning validation -->
+        <!--        <trustkit-config-->
+        <!--            disableDefualtReportUri="true"-->
+        <!--            enforcePinning="false">-->
+        <trust-anchors>
+            <certificates
+                src="user" />
+            <certificates
+                src="system" />
+        </trust-anchors>
+        <!-- Add a reporting URL for pin validation reports -->
+        <!--            <report-uri>TRUSTKIT-REPORT-URL</report-uri>-->
+        <!--        </trustkit-config>-->
+    </domain-config>
+    <!--    <debug-overrides>-->
+    <!--        <trust-anchors>-->
+
+    <!--&lt;!&ndash;            For debugging purposes, add a debug CA and override pins&ndash;&gt;-->
+    <!--            <certificates overridePins="true" src="user" />-->
+    <!--            <certificates overridePins="true" src="system" />-->
+    <!--        </trust-anchors>-->
+    <!--    </debug-overrides>-->
+</network-security-config>
