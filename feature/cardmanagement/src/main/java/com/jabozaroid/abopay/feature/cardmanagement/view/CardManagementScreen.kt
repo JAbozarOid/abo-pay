@@ -32,7 +32,7 @@ import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppButton
 import com.jabozaroid.abopay.core.designsystem.component.AppOutlinedButton
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.QuestionnaireBottomSheet
 import com.jabozaroid.abopay.core.designsystem.component.SwitchComponent
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
@@ -240,7 +240,7 @@ fun CardManagementMainScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
     ) {
         AppToolbar(
             modifier = Modifier
@@ -413,7 +413,7 @@ fun CardManagementMyCardsContent(
             Text(
                 aboPayStringResource(id = R.string.no_my_cards),
                 style = AppTheme.typography.text_12PX_16SP_M,
-                color = AppTheme.colorScheme.ivaTitleText3,
+                color = AppTheme.colorScheme.aboTitleText3,
                 textAlign = TextAlign.Center
             )
         }

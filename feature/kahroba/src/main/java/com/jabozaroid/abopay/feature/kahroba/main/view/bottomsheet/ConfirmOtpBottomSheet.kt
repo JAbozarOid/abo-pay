@@ -78,7 +78,7 @@ private fun ConfirmOtpComponent(
 
             Text(
                 text = aboPayStringResource(com.jabozaroid.abopay.core.common.R.string.otp_sent),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 style = AppTheme.typography.text_11PX_15SP_B.copy(
                     fontWeight = FontWeight.W500
                 ),
@@ -144,9 +144,9 @@ private fun TimerContent(
         },
         colors = ButtonDefaults.outlinedButtonColors(
             contentColor = Color.Black,
-            containerColor = AppTheme.colorScheme.ivaTimerBackground
+            containerColor = AppTheme.colorScheme.aboTimerBackground
         ),
-        borderColor = AppTheme.colorScheme.ivaTimerBackground,
+        borderColor = AppTheme.colorScheme.aboTimerBackground,
     ) {
 
         Text(

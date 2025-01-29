@@ -31,7 +31,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.designsystem.component.SwitchComponent
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
@@ -102,7 +102,7 @@ class InternetSelectionListScreen :
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(AppTheme.colorScheme.ivaBackgroundScreen)
+                .background(AppTheme.colorScheme.aboBackgroundScreen)
         ) {
             AppToolbar(
                 modifier = Modifier
@@ -132,9 +132,9 @@ class InternetSelectionListScreen :
                         Dimens.size_8,
                     ),
                     initialSelectedIndex = categorySelected,
-                    cardBackgroundColor = AppTheme.colorScheme.ivaSwitchUnselected,
-                    itemSelectedColor = AppTheme.colorScheme.ivaSwitchSelected,
-                    itemUnselectedColor = AppTheme.colorScheme.ivaSwitchUnselected,
+                    cardBackgroundColor = AppTheme.colorScheme.aboSwitchUnselected,
+                    itemSelectedColor = AppTheme.colorScheme.aboSwitchSelected,
+                    itemUnselectedColor = AppTheme.colorScheme.aboSwitchUnselected,
                     titles = listOf(
                         aboPayStringResource(id = R.string.monthly),
                         aboPayStringResource(id = R.string.weekly),
@@ -154,7 +154,7 @@ class InternetSelectionListScreen :
                             .fillMaxWidth()
                             .padding(top = Dimens.size_16),
                         thickness = Dimens.size_1,
-                        color = AppTheme.colorScheme.ivaLine,
+                        color = AppTheme.colorScheme.aboLine,
                     )
 
                     UnsafeImageApp(
@@ -237,7 +237,7 @@ class InternetSelectionListScreen :
                     onInternetSelected()
                 }
                 .clip(RoundedCornerShape(Dimens.size_12))
-                .background(AppTheme.colorScheme.ivaBackgroundButton2),
+                .background(AppTheme.colorScheme.aboBackgroundButton2),
 
             verticalAlignment = Alignment.CenterVertically
 
@@ -246,7 +246,7 @@ class InternetSelectionListScreen :
                 modifier = Modifier
                     .fillMaxHeight()
                     .fillMaxWidth(0.33f)
-                    .background(AppTheme.colorScheme.ivaSwitchSelected),
+                    .background(AppTheme.colorScheme.aboSwitchSelected),
                 contentAlignment = Alignment.Center,
                 content =
                 {

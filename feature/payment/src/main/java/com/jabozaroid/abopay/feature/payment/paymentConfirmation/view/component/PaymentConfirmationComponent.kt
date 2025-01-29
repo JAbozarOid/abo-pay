@@ -88,7 +88,7 @@ internal fun TitleContent(modifier: Modifier, state: PaymentConfirmationUiModel)
                 style = AppTheme.typography.text_12PX_16SP_M.copy(
                     fontWeight = FontWeight.W700
                 ),
-                color = AppTheme.colorScheme.ivaTitleText
+                color = AppTheme.colorScheme.aboTitleText
             )
         }
 
@@ -110,7 +110,7 @@ internal fun TitleContent(modifier: Modifier, state: PaymentConfirmationUiModel)
             style = AppTheme.typography.text_10PX_13SP_M.copy(
                 fontWeight = FontWeight.W700
             ),
-            color = AppTheme.colorScheme.ivaTitleText
+            color = AppTheme.colorScheme.aboTitleText
         )
 
     }
@@ -125,7 +125,7 @@ internal fun ImageContent(state: PaymentConfirmationUiModel, modifier: Modifier)
 
         rememberAsyncImagePainter(
             model = state.paymentConfirmationModel.commonItems.iconUrl,
-            placeholder = painterResource(id = com.jabozaroid.abopay.core.designsystem.R.drawable.ic_iva)
+            placeholder = painterResource(id = com.jabozaroid.abopay.core.designsystem.R.drawable.ic_abo_pay)
         )
     } else painterResource(id = state.paymentConfirmationModel.commonItems.icon!!)
     Image(
@@ -148,7 +148,7 @@ internal fun MetaDataContainer(modifier: Modifier, state: PaymentConfirmationUiM
                 .height(Dimens.size_1)
                 .fillMaxWidth()
                 .background(
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     shape = DottedShape(step = Dimens.size_10)
                 )
         )
@@ -170,7 +170,7 @@ internal fun MetaDataContainer(modifier: Modifier, state: PaymentConfirmationUiM
                 .height(Dimens.size_1)
                 .fillMaxWidth()
                 .background(
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     shape = DottedShape(step = Dimens.size_10)
                 )
         )
@@ -186,7 +186,7 @@ internal fun MetaDataContainer(modifier: Modifier, state: PaymentConfirmationUiM
                 .height(Dimens.size_1)
                 .fillMaxWidth()
                 .background(
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     shape = DottedShape(step = Dimens.size_10)
                 )
         )
@@ -210,14 +210,14 @@ internal fun KeyValueRow(item: com.jabozaroid.abopay.core.common.model.MetaDataM
             ),
             text = item.value,
             modifier = Modifier.padding(all = Dimens.size_5),
-            color = AppTheme.colorScheme.ivaTitleText
+            color = AppTheme.colorScheme.aboTitleText
         )
 
         Text(
             text = item.key,
             style = AppTheme.typography.text_10PX_13SP_M,
             modifier = Modifier.padding(all = Dimens.size_5),
-            color = AppTheme.colorScheme.ivaTitleText
+            color = AppTheme.colorScheme.aboTitleText
         )
 
     }
@@ -255,7 +255,7 @@ internal fun PriceContainer(modifier: Modifier, price: String, state: PaymentCon
                 ),
                 text = transformedText,
                 modifier = Modifier.padding(all = Dimens.size_5),
-                color = AppTheme.colorScheme.ivaTitleText
+                color = AppTheme.colorScheme.aboTitleText
             )
 
 
@@ -266,7 +266,7 @@ internal fun PriceContainer(modifier: Modifier, price: String, state: PaymentCon
                 ),
                 text = aboPayStringResource(id = R.string.payable_rial),
                 modifier = Modifier.padding(all = Dimens.size_5),
-                color = AppTheme.colorScheme.ivaTitleText
+                color = AppTheme.colorScheme.aboTitleText
             )
 
 
@@ -284,7 +284,7 @@ internal fun PriceContainer(modifier: Modifier, price: String, state: PaymentCon
                         bottom = Dimens.size_8
                     )
                     .align(alignment = Alignment.End),
-                color = AppTheme.colorScheme.ivaTitleText
+                color = AppTheme.colorScheme.aboTitleText
             )
         }
     }

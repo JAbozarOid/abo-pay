@@ -55,7 +55,7 @@ internal fun HomeBottomNavigation() {
             R.drawable.nav_item_profile
         ),
         BottomNavItem(
-            aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.bottom_nav_item_iva),
+            aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.bottom_nav_item_abo),
             R.drawable.nav_item_abo_pay_plus
         ),
         BottomNavItem(

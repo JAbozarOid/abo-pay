@@ -30,7 +30,7 @@ import androidx.constraintlayout.compose.Dimension.Companion.fillToConstraints
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.component.cardplaceholder.CardPlaceHolder
 import com.jabozaroid.abopay.core.designsystem.component.model.CVV2
@@ -83,7 +83,7 @@ private fun NFCContent(
         modifier = Modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
     ) {
         val (toolBar, content) = createRefs()
 
@@ -179,7 +179,7 @@ private fun NFCContent(
                 Text(
                     modifier = Modifier.fillMaxWidth(),
                     text = aboPayStringResource(R.string.nfc_title_description),
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     style = AppTheme.typography.text_11PX_15SP_M.copy(
                         fontWeight = FontWeight(700),
 
@@ -196,7 +196,7 @@ private fun NFCContent(
                             vertical = Dimens.size_8
                         ),
                     text = aboPayStringResource(R.string.nfc_description),
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     style = AppTheme.typography.text_11PX_15SP_B.copy(
                         fontWeight = FontWeight(500)
                     ),

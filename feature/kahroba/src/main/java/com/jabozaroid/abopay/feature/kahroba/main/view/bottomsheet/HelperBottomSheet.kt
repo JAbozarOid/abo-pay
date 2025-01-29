@@ -109,7 +109,7 @@ private fun HelperBottomSheetContent(
                                 style = AppTheme.typography.text_12PX_16SP_M.copy(
                                     fontWeight = FontWeight(700), textAlign = TextAlign.Center
                                 ),
-                                color = AppTheme.colorScheme.ivaTitleText,
+                                color = AppTheme.colorScheme.aboTitleText,
                             )
                         }
 
@@ -117,7 +117,7 @@ private fun HelperBottomSheetContent(
                         Text(
                             modifier = Modifier.wrapContentWidth(),
                             text = it.description,
-                            color = AppTheme.colorScheme.ivaTitleText,
+                            color = AppTheme.colorScheme.aboTitleText,
                             style = AppTheme.typography.text_10PX_13SP_M.copy(
                                 fontWeight = FontWeight(500),
 

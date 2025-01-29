@@ -32,7 +32,7 @@ import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppPrimaryButton
 import com.jabozaroid.abopay.core.designsystem.component.AppTextField
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
@@ -92,7 +92,7 @@ fun MainContent(
             .fillMaxSize()
 
             .background(
-                AppTheme.colorScheme.ivaBackgroundScreen
+                AppTheme.colorScheme.aboBackgroundScreen
             )
     ) {
         val (toolbar, content) = createRefs()
@@ -184,7 +184,7 @@ fun MainContent(
                 label = aboPayStringResource(id = R.string.password),
                 labelStyle = AppTheme.typography.text_12PX_16SP_B,
                 placeHolder = aboPayStringResource(id = R.string.place_holder_password),
-                cursorColor = AppTheme.colorScheme.ivaTextFieldHint,
+                cursorColor = AppTheme.colorScheme.aboTextFieldHint,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(start = Dimens.size_20, end = Dimens.size_20)
@@ -206,7 +206,7 @@ fun MainContent(
                 supportingText = state.confirmPassword.errorMessage.aboPayStringResource(),
                 label = aboPayStringResource(id = R.string.confirm_password),
                 labelStyle = AppTheme.typography.text_12PX_16SP_B,
-                cursorColor = AppTheme.colorScheme.ivaTextFieldHint,
+                cursorColor = AppTheme.colorScheme.aboTextFieldHint,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(start = Dimens.size_20, end = Dimens.size_20)

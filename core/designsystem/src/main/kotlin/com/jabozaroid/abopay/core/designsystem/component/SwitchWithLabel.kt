@@ -33,9 +33,9 @@ fun SwitchWithLabel(
     onStateChange: (Boolean) -> Unit,
     colors: SwitchColors = SwitchDefaults.colors(
         checkedTrackColor = AppTheme.colorScheme.primary,
-        uncheckedTrackColor = AppTheme.colorScheme.ivaGraySwitchSelected,
-        uncheckedBorderColor = AppTheme.colorScheme.ivaGraySwitchSelected,
-        uncheckedThumbColor = AppTheme.colorScheme.ivaWhiteBackground
+        uncheckedTrackColor = AppTheme.colorScheme.aboGraySwitchSelected,
+        uncheckedBorderColor = AppTheme.colorScheme.aboGraySwitchSelected,
+        uncheckedThumbColor = AppTheme.colorScheme.aboWhiteBackground
     ),
 ) {
 
@@ -60,7 +60,7 @@ fun SwitchWithLabel(
             style = AppTheme.typography.text_9PX_12SP_M.copy(
                 fontWeight = FontWeight.Bold
             ),
-            color = AppTheme.colorScheme.ivaTitleText
+            color = AppTheme.colorScheme.aboTitleText
         )
 
         Switch(

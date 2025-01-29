@@ -47,7 +47,7 @@ internal fun BalanceDescription(
                 .fillMaxWidth()
                 .wrapContentHeight()
                 .clip(RoundedCornerShape(6.dp))
-                .background(AppTheme.colorScheme.ivaBalanceInformationBackground),
+                .background(AppTheme.colorScheme.aboBalanceInformationBackground),
             horizontalArrangement = Arrangement.SpaceAround,
         ) {
 
@@ -82,7 +82,7 @@ internal fun BalanceDescription(
                 Spacer(modifier = Modifier.height(Dimens.size_8))
                 Text(
                     text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.compatible_owner_sim),
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     textAlign = TextAlign.Right,
                     style = AppTheme.typography.text_10PX_13SP_M
                 )

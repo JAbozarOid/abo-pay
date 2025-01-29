@@ -62,7 +62,7 @@ internal fun SharingContent(
     ConstraintLayout(
         modifier = Modifier
             .fillMaxSize()
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
             .padding(
                 top = Dimens.size_4,
                 start = Dimens.size_8,

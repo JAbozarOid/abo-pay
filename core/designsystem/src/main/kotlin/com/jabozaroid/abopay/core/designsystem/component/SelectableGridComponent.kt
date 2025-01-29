@@ -104,7 +104,7 @@ fun SelectableGridComponent(
                         .fillMaxWidth()
                         .padding(top = Dimens.size_16),
                     thickness = Dimens.size_1,
-                    color = AppTheme.colorScheme.ivaLine,
+                    color = AppTheme.colorScheme.aboLine,
                 )
             }
         }
@@ -135,7 +135,7 @@ private fun IconItem(
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .background(AppTheme.colorScheme.ivaBackgroundButton2),
+                .background(AppTheme.colorScheme.aboBackgroundButton2),
             contentAlignment = Alignment.Center,
         ) {
             UnsafeImageApp(

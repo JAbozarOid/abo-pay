@@ -32,7 +32,7 @@ fun InternetConnectionComponent(
         modifier = modifier
             .fillMaxSize(),
         colors = CardDefaults.cardColors(
-            containerColor = AppTheme.colorScheme.ivaWhiteBackground
+            containerColor = AppTheme.colorScheme.aboWhiteBackground
         ),
         shape = RoundedCornerShape(Dimens.size_12)
     ) {
@@ -49,7 +49,7 @@ fun InternetConnectionComponent(
                 contentDescription = "refresh"
             )
             Text(
-                color = AppTheme.colorScheme.ivaOutlineButtonText,
+                color = AppTheme.colorScheme.aboOutlineButtonText,
                 modifier = Modifier.padding(
                     horizontal = Dimens.size_70,
                     vertical = Dimens.size_8

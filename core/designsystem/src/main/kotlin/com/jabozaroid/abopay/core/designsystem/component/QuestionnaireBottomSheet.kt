@@ -30,7 +30,7 @@ fun QuestionnaireBottomSheet(
                 text = bottomSheetQuestion,
                 textAlign = TextAlign.Center,
                 style = AppTheme.typography.text_12PX_16SP_M.copy(
-                    color = AppTheme.colorScheme.ivaTitleText
+                    color = AppTheme.colorScheme.aboTitleText
                 ),
             )
         },

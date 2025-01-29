@@ -1,4 +1,4 @@
-package com.jabozaroid.abopay.core.designsystem.component
+package com.jabozaroid.abopay.core.designsystem.component.toolbar
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.BorderStroke
@@ -32,6 +32,7 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.R
+import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
 
@@ -136,7 +137,7 @@ fun AppToolbar(
                     width = Dimension.fillToConstraints
                 },
                 text = toolbarTitle,
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 style = AppTheme.typography.text_13PX_17SP_M.copy(
                     fontWeight = FontWeight.W800
                 )
@@ -161,7 +162,7 @@ fun AppToolbar(
                         onLeftIconClicked?.invoke()
                     }
                     .alpha(if (leftIcon == null) 0f else 1f),
-                painter = painterResource(id = leftIcon ?: R.drawable.iva_toolbar_logo),
+                painter = painterResource(id = leftIcon ?: R.drawable.abo_pay_toolbar_logo),
                 contentDescription = "left icon"
             )
 

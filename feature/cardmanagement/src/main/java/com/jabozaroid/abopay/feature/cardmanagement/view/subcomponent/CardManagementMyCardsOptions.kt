@@ -117,7 +117,7 @@ fun MyCardActionItem(
             .fillMaxWidth()
             .clip(shape = RoundedCornerShape(Dimens.size_8)),
         onClick = { onClickAction(myCardOptionsModel) },
-        colors = CardDefaults.cardColors(containerColor = AppTheme.colorScheme.ivaBackgroundScreen)
+        colors = CardDefaults.cardColors(containerColor = AppTheme.colorScheme.aboBackgroundScreen)
     ) {
         Row(
             modifier = Modifier
@@ -130,7 +130,7 @@ fun MyCardActionItem(
                 modifier = Modifier
                     .size(36.dp)
                     .clip(RoundedCornerShape(Dimens.size_8))
-                    .background(AppTheme.colorScheme.ivaWhiteBackground)
+                    .background(AppTheme.colorScheme.aboWhiteBackground)
                     .padding(Dimens.size_4),
                 painter = painterResource(id = myCardOptionsModel.icon),
                 contentDescription = aboPayStringResource(
@@ -139,7 +139,7 @@ fun MyCardActionItem(
                 colorFilter = if (myCardOptionsModel.isEnabled)
                     null
                 else
-                    ColorFilter.tint(AppTheme.colorScheme.ivaNoticeTextColor)
+                    ColorFilter.tint(AppTheme.colorScheme.aboNoticeTextColor)
             )
 
             Column {
@@ -148,9 +148,9 @@ fun MyCardActionItem(
                     text = aboPayStringResource(id = myCardOptionsModel.title),
                     style = AppTheme.typography.text_10PX_13SP_M.copy(
                         color = if (myCardOptionsModel.isEnabled)
-                            AppTheme.colorScheme.ivaTitleText
+                            AppTheme.colorScheme.aboTitleText
                         else
-                            AppTheme.colorScheme.ivaNoticeTextColor
+                            AppTheme.colorScheme.aboNoticeTextColor
                     ),
                 )
                 if (myCardOptionsModel.subtitle != null)
@@ -159,9 +159,9 @@ fun MyCardActionItem(
                         text = aboPayStringResource(id = myCardOptionsModel.subtitle),
                         style = AppTheme.typography.text_8PX_10SP_B.copy(
                             color = if (myCardOptionsModel.isEnabled)
-                                AppTheme.colorScheme.ivaTitleText
+                                AppTheme.colorScheme.aboTitleText
                             else
-                                AppTheme.colorScheme.ivaNoticeTextColor
+                                AppTheme.colorScheme.aboNoticeTextColor
                         ),
                     )
             }

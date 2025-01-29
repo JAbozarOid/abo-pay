@@ -124,7 +124,7 @@ fun ListContent(
             placeHolderAlignment = Alignment.CenterEnd,
             leadingIcon = {
                 Icon(
-                    tint = AppTheme.colorScheme.ivaDetailDots,
+                    tint = AppTheme.colorScheme.aboDetailDots,
                     painter = painterResource(id = R.drawable.ic_search),
                     contentDescription = "leading icon",
                     modifier = Modifier.size(Dimens.size_20)
@@ -175,7 +175,7 @@ private fun ItemContainer(
             .clip(
                 RoundedCornerShape(Dimens.size_12)
             )
-            .background(AppTheme.colorScheme.ivaDisableTextFieldOutline)
+            .background(AppTheme.colorScheme.aboDisableTextFieldOutline)
             .padding(
                 horizontal = Dimens.size_5
             ),
@@ -246,7 +246,7 @@ private fun ItemContainer(
                         start = Dimens.size_4, top = Dimens.size_4
                     )
                     .align(Alignment.End),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 textAlign = TextAlign.Right,
 
                 )
@@ -262,7 +262,7 @@ private fun ItemContainer(
                 style = AppTheme.typography.text_10PX_13SP_B.copy(
                     textDirection = TextDirection.Ltr
                 ),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 textAlign = TextAlign.Right,
             )
 
@@ -308,11 +308,11 @@ fun PreviewSearchComponent() {
 
     val item = listOf(
         SearchItemModel(
-            "1", title = "حسینی", subTitle = "6037997175607630", icon = R.drawable.ic_iva
+            "1", title = "حسینی", subTitle = "6037997175607630", icon = R.drawable.ic_abo_pay
         ), SearchItemModel(
-            "2", title = "موسوی", subTitle = "6037997175607630", icon = R.drawable.iva_toolbar_logo
+            "2", title = "موسوی", subTitle = "6037997175607630", icon = R.drawable.abo_pay_toolbar_logo
         ), SearchItemModel(
-            "3", title = "غایب", subTitle = "5892101178084188", icon = R.drawable.iva_toolbar_logo
+            "3", title = "غایب", subTitle = "5892101178084188", icon = R.drawable.abo_pay_toolbar_logo
         )
     )
     AppTheme {

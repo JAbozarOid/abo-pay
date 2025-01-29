@@ -193,14 +193,14 @@ class LoginScreen : BaseScreen<LoginUiModel, LoginAction, LoginEvent>(
                     modifier = Modifier.height(Dimens.size_36),
                     onClick = { onReagentClick.invoke() },
                     enabled = true,
-                    borderColor = AppTheme.colorScheme.ivaTextFieldHint,
+                    borderColor = AppTheme.colorScheme.aboTextFieldHint,
                     contentPadding = ButtonDefaults.TextButtonContentPadding,
                     text = {
                         Text(
                             modifier = Modifier
                                 .padding(horizontal = Dimens.size_34),
                             text = aboPayStringResource(R.string.enter_reagent_code),
-                            color = AppTheme.colorScheme.ivaTitleText,
+                            color = AppTheme.colorScheme.aboTitleText,
                             style = AppTheme.typography.text_9PX_12SP_B.copy(
                                 textAlign = TextAlign.Center
                             )
@@ -259,7 +259,7 @@ class LoginScreen : BaseScreen<LoginUiModel, LoginAction, LoginEvent>(
                 label = aboPayStringResource(id = R.string.phone_number),
                 labelStyle = AppTheme.typography.text_12PX_16SP_B,
                 placeHolder = aboPayStringResource(id = R.string.place_holder_phone_number),
-                cursorColor = AppTheme.colorScheme.ivaTextFieldHint,
+                cursorColor = AppTheme.colorScheme.aboTextFieldHint,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(top = Dimens.size_14, bottom = Dimens.size_24)
@@ -289,7 +289,7 @@ class LoginScreen : BaseScreen<LoginUiModel, LoginAction, LoginEvent>(
                     style = AppTheme.typography.text_12PX_16SP_M.copy(
                         fontWeight = FontWeight.W500
                     ),
-                    color = AppTheme.colorScheme.ivaDetailText
+                    color = AppTheme.colorScheme.aboDetailText
                 )
 
                 Spacer(modifier = Modifier.width(Dimens.size_4))
@@ -303,7 +303,7 @@ class LoginScreen : BaseScreen<LoginUiModel, LoginAction, LoginEvent>(
                     style = AppTheme.typography.text_12PX_16SP_M.copy(
                         fontWeight = FontWeight.W700
                     ),
-                    color = AppTheme.colorScheme.ivaIconToolbar
+                    color = AppTheme.colorScheme.aboIconToolbar
                 )
 
             }

@@ -163,7 +163,7 @@ fun PreviewContent() {
             bankName = com.jabozaroid.abopay.core.common.R.string.melli_bank,
             colorUp = com.jabozaroid.abopay.core.common.R.color.melli_up,
             colorDown = com.jabozaroid.abopay.core.common.R.color.melli_Down,
-            icon = R.drawable.ic_iva
+            icon = R.drawable.ic_abo_pay
         ), Card(
             ownerName = "ابوذر رقیب دوست",
             number = "5892101178084188",
@@ -174,7 +174,7 @@ fun PreviewContent() {
             bankName = com.jabozaroid.abopay.core.common.R.string.melli_bank,
             colorUp = com.jabozaroid.abopay.core.common.R.color.melli_up,
             colorDown = com.jabozaroid.abopay.core.common.R.color.melli_Down,
-            icon = R.drawable.ic_iva
+            icon = R.drawable.ic_abo_pay
 
         ), Card(
             ownerName = "ساناز رمضان",
@@ -186,7 +186,7 @@ fun PreviewContent() {
             bankName = com.jabozaroid.abopay.core.common.R.string.melli_bank,
             colorUp = com.jabozaroid.abopay.core.common.R.color.melli_up,
             colorDown = com.jabozaroid.abopay.core.common.R.color.melli_Down,
-            icon = R.drawable.ic_iva
+            icon = R.drawable.ic_abo_pay
 
         ), Card(
             ownerName = "عطیه فریدونی",
@@ -198,7 +198,7 @@ fun PreviewContent() {
             bankName = com.jabozaroid.abopay.core.common.R.string.melli_bank,
             colorUp = com.jabozaroid.abopay.core.common.R.color.melli_up,
             colorDown = com.jabozaroid.abopay.core.common.R.color.melli_Down,
-            icon = R.drawable.ic_iva
+            icon = R.drawable.ic_abo_pay
 
         )
     )

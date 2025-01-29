@@ -6,7 +6,7 @@
 
     <application
         android:name="com.jabozaroid.abopay.application.Application"
-        android:label="iva"
+        android:label="AboPay"
         tools:replace="android:label"
         android:icon="@mipmap/ic_launcher_round"
         android:roundIcon="@mipmap/ic_launcher_round"

@@ -148,7 +148,7 @@ class VerifyOtpScreen : BaseScreen<LoginUiModel, LoginAction, LoginEvent>(
 
                 Text(
                     text = aboPayStringResource(com.jabozaroid.abopay.core.common.R.string.otp_sent),
-                    color = AppTheme.colorScheme.ivaNoticeTextColor,
+                    color = AppTheme.colorScheme.aboNoticeTextColor,
                     style = AppTheme.typography.text_11PX_15SP_B,
                     textAlign = TextAlign.Center,
                     modifier = Modifier
@@ -205,7 +205,7 @@ class VerifyOtpScreen : BaseScreen<LoginUiModel, LoginAction, LoginEvent>(
                     onEditClicked.invoke()
                 }
                 .clip(RoundedCornerShape(Dimens.size_10))
-                .background(color = AppTheme.colorScheme.ivaBackgroundButton2)
+                .background(color = AppTheme.colorScheme.aboBackgroundButton2)
                 .constrainAs(edtMobile) {
                     start.linkTo(btnEnter.start)
                     end.linkTo(btnEnter.end)
@@ -253,9 +253,9 @@ class VerifyOtpScreen : BaseScreen<LoginUiModel, LoginAction, LoginEvent>(
             },
             colors = ButtonDefaults.outlinedButtonColors(
                 contentColor = Color.Black,
-                containerColor = AppTheme.colorScheme.ivaTimerBackground
+                containerColor = AppTheme.colorScheme.aboTimerBackground
             ),
-            borderColor = AppTheme.colorScheme.ivaTimerBackground,
+            borderColor = AppTheme.colorScheme.aboTimerBackground,
         ) {
 
             ProvideTextStyle(
@@ -282,7 +282,7 @@ class VerifyOtpScreen : BaseScreen<LoginUiModel, LoginAction, LoginEvent>(
             ) {
                 Text(
                     text = mobile,
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     modifier = Modifier.padding(all = Dimens.size_10),
                 )
             }

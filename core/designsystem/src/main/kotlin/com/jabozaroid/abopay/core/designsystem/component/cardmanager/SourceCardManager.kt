@@ -50,14 +50,14 @@ fun SourceCardManager(
             .align(Alignment.CenterHorizontally)
             .border(
                 width = 0.4.dp,
-                color = AppTheme.colorScheme.ivaDisableTextFieldOutline,
+                color = AppTheme.colorScheme.aboDisableTextFieldOutline,
                 shape = CircleShape
             )
             .shadow(
                 elevation = 30.dp,
                 spotColor = Color.Gray
             )
-            .background(AppTheme.colorScheme.ivaWhiteBackground)
+            .background(AppTheme.colorScheme.aboWhiteBackground)
             .clickable(
                 indication = null,
                 interactionSource = remember { MutableInteractionSource() }

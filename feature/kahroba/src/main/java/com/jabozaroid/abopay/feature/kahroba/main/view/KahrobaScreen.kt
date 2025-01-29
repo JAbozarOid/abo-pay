@@ -37,7 +37,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppButton
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.component.cardinformation.AddUserNewCardBottomSheet
 import com.jabozaroid.abopay.core.designsystem.component.cardmanager.SourceCardManager
@@ -152,7 +152,7 @@ private fun KahrobaBaseContent(
         modifier = Modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
     ) {
         val (toolBar, content) = createRefs()
 
@@ -241,7 +241,7 @@ private fun KahrobaBaseContent(
                     textAlign = TextAlign.Center,
                     text = aboPayStringResource(R.string.kahroba_supporting_bank_title),
                     style = AppTheme.typography.text_12PX_16SP_M,
-                    color = AppTheme.colorScheme.ivaOutlineButtonText,
+                    color = AppTheme.colorScheme.aboOutlineButtonText,
                 )
                 val configuration = LocalConfiguration.current
                 val screenWidth = configuration.screenWidthDp
@@ -265,7 +265,7 @@ private fun KahrobaBaseContent(
                                 modifier = Modifier
                                     .size(itemSize.dp, itemSize.dp)
                                     .clip(RoundedCornerShape(Dimens.size_12))
-                                    .background(AppTheme.colorScheme.ivaBackgroundButton2),
+                                    .background(AppTheme.colorScheme.aboBackgroundButton2),
                             ) {
                                 Image(
                                     modifier = Modifier
@@ -297,7 +297,7 @@ private fun KahrobaBaseContent(
                             vertical = Dimens.size_18,
                             horizontal = Dimens.size_34
                         ),
-                    color = AppTheme.colorScheme.ivaOutlineButtonText,
+                    color = AppTheme.colorScheme.aboOutlineButtonText,
                     textAlign = TextAlign.Center,
                     text = aboPayStringResource(R.string.select_card_title),
                     style = AppTheme.typography.text_12PX_16SP_B
@@ -311,7 +311,7 @@ private fun KahrobaBaseContent(
                             vertical = Dimens.size_18,
                             horizontal = Dimens.size_34
                         ),
-                    color = AppTheme.colorScheme.ivaOutlineButtonText,
+                    color = AppTheme.colorScheme.aboOutlineButtonText,
                     textAlign = TextAlign.Center,
                     text = aboPayStringResource(R.string.select_card_description),
                     style = AppTheme.typography.text_11PX_15SP_M
@@ -335,7 +335,7 @@ private fun KahrobaBaseContent(
                             vertical = Dimens.size_18,
                             horizontal = Dimens.size_34
                         ),
-                    color = AppTheme.colorScheme.ivaOutlineButtonText,
+                    color = AppTheme.colorScheme.aboOutlineButtonText,
                     textAlign = TextAlign.Center,
                     text = aboPayStringResource(R.string.kahroba_card_description),
                     style = AppTheme.typography.text_12PX_16SP_M

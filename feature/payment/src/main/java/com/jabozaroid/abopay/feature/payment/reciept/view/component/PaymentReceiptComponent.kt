@@ -119,7 +119,7 @@ internal fun IconContainer(state: ReceiptUiModel, modifier: Modifier) {
 
         rememberAsyncImagePainter(
             model = state.receiptModel.commonItems.iconUrl,
-            placeholder = painterResource(id = com.jabozaroid.abopay.core.designsystem.R.drawable.ic_iva)
+            placeholder = painterResource(id = com.jabozaroid.abopay.core.designsystem.R.drawable.ic_abo_pay)
         )
     } else painterResource(id = state.receiptModel.commonItems.icon!!)
 
@@ -145,14 +145,14 @@ internal fun KeyValueRow(item: com.jabozaroid.abopay.core.common.model.MetaDataM
 
                 ),
                 modifier = Modifier.padding(all = Dimens.size_5),
-                color = AppTheme.colorScheme.ivaTitleText
+                color = AppTheme.colorScheme.aboTitleText
             )
 
 
             Text(
                 text = item.key,
                 Modifier.padding(all = Dimens.size_5),
-                color = AppTheme.colorScheme.ivaTitleText
+                color = AppTheme.colorScheme.aboTitleText
             )
 
     }

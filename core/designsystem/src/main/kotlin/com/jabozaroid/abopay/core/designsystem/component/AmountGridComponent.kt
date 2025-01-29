@@ -93,7 +93,7 @@ private fun IconItem(
             .size(Dimens.size_100, Dimens.size_40)
             .padding(Dimens.size_4)
             .clickable(onClick = onClick),
-        colors = CardDefaults.cardColors(containerColor = AppTheme.colorScheme.ivaWhiteBackground),
+        colors = CardDefaults.cardColors(containerColor = AppTheme.colorScheme.aboWhiteBackground),
         border = BorderStroke(Dimens.size_1, Color.Black),
     ) {
         if (isSelected) Box(

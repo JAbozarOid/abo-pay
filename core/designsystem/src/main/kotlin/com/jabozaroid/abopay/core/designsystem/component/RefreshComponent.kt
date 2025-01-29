@@ -35,7 +35,7 @@ fun RefreshComponent(
         modifier = modifier
             .fillMaxSize(),
         colors = CardDefaults.cardColors(
-            containerColor = AppTheme.colorScheme.ivaWhiteBackground
+            containerColor = AppTheme.colorScheme.aboWhiteBackground
         ),
         shape = RoundedCornerShape(Dimens.size_12)
     ) {
@@ -51,7 +51,7 @@ fun RefreshComponent(
                 painter = painterResource(R.drawable.refresh_image), contentDescription = "refresh"
             )
             Text(
-                color = AppTheme.colorScheme.ivaOutlineButtonText,
+                color = AppTheme.colorScheme.aboOutlineButtonText,
                 modifier = Modifier.padding(Dimens.size_8),
                 style = AppTheme.typography.text_9PX_12SP_M.copy(
                     textDirection = TextDirection.Rtl

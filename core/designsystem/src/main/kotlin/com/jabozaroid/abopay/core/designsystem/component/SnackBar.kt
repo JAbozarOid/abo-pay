@@ -39,7 +39,7 @@ fun CustomSnackBar(
                 modifier = Modifier
                     .fillMaxWidth(),
                 text = message,
-                color = AppTheme.colorScheme.ivaWhiteBackground,
+                color = AppTheme.colorScheme.aboWhiteBackground,
                 style = AppTheme.typography.text_10PX_13SP_M.copy(
                     textAlign = TextAlign.Center
                 )

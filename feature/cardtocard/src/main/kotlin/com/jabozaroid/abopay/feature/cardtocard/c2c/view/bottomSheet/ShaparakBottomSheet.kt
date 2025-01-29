@@ -33,7 +33,7 @@ fun ShaparakBottomSheet(
             ProvideTextStyle(value = AppTheme.typography.text_11PX_15SP_M) {
                 Text(
                     text = aboPayStringResource(id = R.string.shaparak_rules_alert),
-                    color = AppTheme.colorScheme.ivaOutlineButtonText,
+                    color = AppTheme.colorScheme.aboOutlineButtonText,
                     maxLines = 5,
                     overflow = TextOverflow.Ellipsis,
                     textAlign = TextAlign.Center,

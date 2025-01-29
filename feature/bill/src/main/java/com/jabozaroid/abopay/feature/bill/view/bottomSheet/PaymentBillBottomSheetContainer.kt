@@ -132,13 +132,13 @@ internal fun PaymentBillBottomSheetContainer(
                     ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                         Text(
                             text = billId,
-                            color = AppTheme.colorScheme.ivaTitleText
+                            color = AppTheme.colorScheme.aboTitleText
                         )
                     }
                     ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                         Text(
                             text = aboPayStringResource(R.string.bill_id),
-                            color = AppTheme.colorScheme.ivaTitleText
+                            color = AppTheme.colorScheme.aboTitleText
                         )
                     }
                 }
@@ -156,13 +156,13 @@ internal fun PaymentBillBottomSheetContainer(
                     ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                         Text(
                             text = payId,
-                            color = AppTheme.colorScheme.ivaTitleText
+                            color = AppTheme.colorScheme.aboTitleText
                         )
                     }
                     ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                         Text(
                             text = aboPayStringResource(R.string.payment_id),
-                            color = AppTheme.colorScheme.ivaTitleText
+                            color = AppTheme.colorScheme.aboTitleText
                         )
                     }
                 }
@@ -205,13 +205,13 @@ internal fun Price(modifier: Modifier, amount: String) {
             ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                 Text(
                     text = amount,
-                    color = AppTheme.colorScheme.ivaTitleText
+                    color = AppTheme.colorScheme.aboTitleText
                 )
             }
             ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                 Text(
                     text = aboPayStringResource(R.string.amount_rial),
-                    color = AppTheme.colorScheme.ivaTitleText
+                    color = AppTheme.colorScheme.aboTitleText
                 )
             }
         }

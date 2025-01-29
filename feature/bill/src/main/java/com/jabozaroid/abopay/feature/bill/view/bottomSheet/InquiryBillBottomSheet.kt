@@ -239,13 +239,13 @@ internal fun DescriptionContent(
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                     Text(
                         text = item?.billId ?: "",
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                     Text(
                         text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.bill_id),
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
             }
@@ -264,13 +264,13 @@ internal fun DescriptionContent(
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                     Text(
                         text = item?.payId.toString(),
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                     Text(
                         text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.payment_id),
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
             }
@@ -289,13 +289,13 @@ internal fun DescriptionContent(
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                     Text(
                         text = if (wage == "0") aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.free) else "",
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                     Text(
                         text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.bill_wage),
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
             }
@@ -315,13 +315,13 @@ internal fun DescriptionContent(
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                     Text(
                         text = item?.amountDescription ?: "",
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                     Text(
                         text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.payable),
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
             }
@@ -341,13 +341,13 @@ internal fun DescriptionContent(
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                     Text(
                         text = phoneNumber,
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                     Text(
                         text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.mobile_number),
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
             }
@@ -367,13 +367,13 @@ internal fun DescriptionContent(
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                     Text(
                         text = telephone,
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                     Text(
                         text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.telephone_number),
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
             }
@@ -393,13 +393,13 @@ internal fun DescriptionContent(
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                     Text(
                         text = item?.date ?: "",
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
                     Text(
                         text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.payment_deadline),
-                        color = AppTheme.colorScheme.ivaTitleText
+                        color = AppTheme.colorScheme.aboTitleText
                     )
                 }
             }
@@ -428,13 +428,13 @@ internal fun PriceBox(modifier: Modifier, data: BillInquiryItemResult?) {
             ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                 Text(
                     text = data?.amountDescription ?: "",
-                    color = AppTheme.colorScheme.ivaTitleText
+                    color = AppTheme.colorScheme.aboTitleText
                 )
             }
             ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                 Text(
                     text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.amount),
-                    color = AppTheme.colorScheme.ivaTitleText
+                    color = AppTheme.colorScheme.aboTitleText
                 )
             }
         }
@@ -482,7 +482,7 @@ internal fun TwoTypePriceBox(
                 .fillMaxWidth()
                 .wrapContentHeight()
                 .background(
-                    color = AppTheme.colorScheme.ivaWhiteBackground,
+                    color = AppTheme.colorScheme.aboWhiteBackground,
                     shape = RoundedCornerShape(Dimens.size_8)
                 )
 
@@ -490,7 +490,7 @@ internal fun TwoTypePriceBox(
         ) {
             Image(
                 painter = painterResource(id = R.drawable.rectangle_gray),
-                colorFilter = ColorFilter.tint(if (!boxLeftSelected.value) AppTheme.colorScheme.ivaSwitchSelected else AppTheme.colorScheme.ivaDisableButtonBackground),
+                colorFilter = ColorFilter.tint(if (!boxLeftSelected.value) AppTheme.colorScheme.aboSwitchSelected else AppTheme.colorScheme.aboDisableButtonBackground),
                 contentDescription = "",
                 modifier = Modifier
                     .fillMaxWidth()
@@ -505,7 +505,7 @@ internal fun TwoTypePriceBox(
                 ProvideTextStyle(value = AppTheme.typography.text_10PX_13SP_M) {
                     Text(
                         text = data[0]?.termTypeDesc ?: "",
-                        color = AppTheme.colorScheme.ivaTitleText,
+                        color = AppTheme.colorScheme.aboTitleText,
                         modifier = Modifier
                             .fillMaxWidth(),
                         textAlign = TextAlign.Center
@@ -515,7 +515,7 @@ internal fun TwoTypePriceBox(
                 ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_B) {
                     Text(
                         text = data[0]?.amountDescription ?: "",
-                        color = AppTheme.colorScheme.ivaTitleText,
+                        color = AppTheme.colorScheme.aboTitleText,
                         modifier = Modifier
                             .fillMaxWidth(),
                         textAlign = TextAlign.Center
@@ -542,14 +542,14 @@ internal fun TwoTypePriceBox(
                 .fillMaxWidth()
                 .wrapContentHeight()
                 .background(
-                    color = AppTheme.colorScheme.ivaWhiteBackground,
+                    color = AppTheme.colorScheme.aboWhiteBackground,
                     shape = RoundedCornerShape(Dimens.size_8)
                 )
                 .padding(vertical = Dimens.size_8))
         {
             Image(
                 painter = painterResource(id = R.drawable.rectangle_yellow),
-                colorFilter = ColorFilter.tint(if (boxLeftSelected.value) AppTheme.colorScheme.ivaSwitchSelected else AppTheme.colorScheme.ivaDisableButtonBackground),
+                colorFilter = ColorFilter.tint(if (boxLeftSelected.value) AppTheme.colorScheme.aboSwitchSelected else AppTheme.colorScheme.aboDisableButtonBackground),
                 contentDescription = "",
                 modifier = Modifier
                     .fillMaxWidth()
@@ -565,7 +565,7 @@ internal fun TwoTypePriceBox(
                     Text(
                         text = data[1]?.termTypeDesc
                             ?: aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.middle_period),
-                        color = AppTheme.colorScheme.ivaTitleText,
+                        color = AppTheme.colorScheme.aboTitleText,
                         modifier = Modifier
                             .fillMaxWidth(),
                         textAlign = TextAlign.Center
@@ -576,7 +576,7 @@ internal fun TwoTypePriceBox(
                     Text(
                         text = data[1]?.amountDescription
                             ?: aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.final_period),
-                        color = AppTheme.colorScheme.ivaTitleText,
+                        color = AppTheme.colorScheme.aboTitleText,
                         modifier = Modifier
                             .fillMaxWidth(),
                         textAlign = TextAlign.Center

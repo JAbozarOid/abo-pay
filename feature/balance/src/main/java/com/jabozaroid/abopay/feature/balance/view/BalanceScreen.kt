@@ -22,7 +22,7 @@ import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
 import com.jabozaroid.abopay.core.designsystem.component.AppButton
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.component.cardinformation.AddUserNewCardBottomSheet
 import com.jabozaroid.abopay.core.designsystem.component.cardinformation.CardInformation
@@ -139,7 +139,7 @@ class BalanceScreen : BaseScreen<BalanceUiModel, BalanceAction, BalanceEvent>(
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
-                .background(AppTheme.colorScheme.ivaBackgroundScreen)
+                .background(AppTheme.colorScheme.aboBackgroundScreen)
 
         ) {
             val (toolbar, content, receiptContent) = createRefs()

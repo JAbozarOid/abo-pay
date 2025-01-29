@@ -3,6 +3,7 @@ package com.jabozaroid.abopay.feature.charge.viewmodel
 import com.jabozaroid.abopay.core.common.util.ValidationState
 import com.jabozaroid.abopay.core.common.util.ValidationUtil
 import com.jabozaroid.abopay.core.designsystem.component.model.IconItemUiModel
+import com.jabozaroid.abopay.core.designsystem.component.model.MobileNumberUiModel
 import com.jabozaroid.abopay.core.domain.AboPayExceptionMessage
 import com.jabozaroid.abopay.core.domain.AboPayResult
 import com.jabozaroid.abopay.core.domain.model.charge.param.favourite.DeleteFavouriteChargeNumberParam
@@ -13,7 +14,6 @@ import com.jabozaroid.abopay.core.domain.usecase.charge.GetPinChargesUseCase
 import com.jabozaroid.abopay.core.domain.usecase.charge.GetTopUpChargesUseCase
 import com.jabozaroid.abopay.core.test.rule.MainDispatcherRule
 import com.jabozaroid.abopay.feature.charge.model.ChargeAction
-import com.jabozaroid.abopay.feature.charge.model.MobileNumberUiModel
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk

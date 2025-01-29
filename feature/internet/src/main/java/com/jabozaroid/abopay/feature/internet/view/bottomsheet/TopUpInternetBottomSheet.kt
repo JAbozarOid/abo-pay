@@ -76,7 +76,7 @@ fun TopUpInternetBottomSheetContent(
                 Text(
                     modifier = Modifier.wrapContentSize(),
                     text = internetType.title,
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     textAlign = TextAlign.Center,
                     style = AppTheme.typography.text_9PX_12SP_M
                 )
