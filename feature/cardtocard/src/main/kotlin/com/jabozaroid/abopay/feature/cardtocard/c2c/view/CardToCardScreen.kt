@@ -23,7 +23,7 @@ import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
 import com.jabozaroid.abopay.core.designsystem.component.AppPrimaryButton
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.component.cardinformation.AddUserNewCardBottomSheet
 import com.jabozaroid.abopay.core.designsystem.component.cardmanager.SourceCardManager
@@ -181,7 +181,7 @@ class CardToCardScreen : BaseScreen<CardToCardUiModel, CardToCardAction, CardToC
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
-                .background(AppTheme.colorScheme.ivaBackgroundScreen)
+                .background(AppTheme.colorScheme.aboBackgroundScreen)
 
         ) {
             val (toolbar, content) = createRefs()

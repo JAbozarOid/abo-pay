@@ -32,7 +32,7 @@ fun FrequentManagerComponent(
         Text(
             text = title,
             modifier = Modifier.align(Alignment.End),
-            color = AppTheme.colorScheme.ivaOutlineButtonText,
+            color = AppTheme.colorScheme.aboOutlineButtonText,
             style = AppTheme.typography.text_11PX_15SP_B
         )
 
@@ -45,7 +45,7 @@ fun FrequentManagerComponent(
             ) {
                 Text(
                     text = description,
-                    color = AppTheme.colorScheme.ivaOutlineButtonText,
+                    color = AppTheme.colorScheme.aboOutlineButtonText,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis,
                     modifier = Modifier

@@ -32,8 +32,8 @@ import com.jabozaroid.abopay.notification.R
  * Created on 18,August,2024
  */
 
-private const val NOTIFICATION_NAME_KEY = "pulse"
-private const val NOTIFICATION_CHANNEL_ID_KEY = "pulse_channel_01"
+private const val NOTIFICATION_NAME_KEY = "aboPay"
+private const val NOTIFICATION_CHANNEL_ID_KEY = "abo_pay_channel_01"
 
 fun initialFCM() {
     FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
@@ -69,8 +69,8 @@ fun getPermission(activity: AppCompatActivity, granted: (Boolean) -> Unit) {
 }
 
 fun initFirebaseMessagingTopics() {
-//    FirebaseMessaging.getInstance().subscribeToTopic("IvaAllUsers")
-//    FirebaseMessaging.getInstance().subscribeToTopic("IvaAndroidUsers")
+//    FirebaseMessaging.getInstance().subscribeToTopic("AboPayAllUsers")
+//    FirebaseMessaging.getInstance().subscribeToTopic("AboPayAndroidUsers")
 }
 
 fun createPendingIntent(

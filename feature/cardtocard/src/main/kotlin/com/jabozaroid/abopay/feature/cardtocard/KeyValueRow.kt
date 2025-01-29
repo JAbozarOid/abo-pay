@@ -43,7 +43,7 @@ fun KeyValueRow(
                 .padding(all = Dimens.size_5)
                 .weight(0.55f),
             maxLines = 1,
-            color = AppTheme.colorScheme.ivaTitleText
+            color = AppTheme.colorScheme.aboTitleText
         )
         Text(
             text = item.key,
@@ -54,7 +54,7 @@ fun KeyValueRow(
                 .weight(0.4f),
             maxLines = 1,
             textAlign = TextAlign.Right,
-            color = AppTheme.colorScheme.ivaTitleText
+            color = AppTheme.colorScheme.aboTitleText
         )
     }}
 

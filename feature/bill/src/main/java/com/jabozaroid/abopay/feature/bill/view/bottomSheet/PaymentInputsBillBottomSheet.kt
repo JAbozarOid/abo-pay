@@ -140,7 +140,7 @@ internal fun PaymentInputsBillContent(
                 label = firstTextFiledTitle,
                 placeHolder = firstTextFiledPlaceHolder,
                 labelStyle = AppTheme.typography.text_12PX_16SP_B,
-                cursorColor = AppTheme.colorScheme.ivaTextFieldHint,
+                cursorColor = AppTheme.colorScheme.aboTextFieldHint,
                 isError = billIdError.isNotBlank(),
                 supportingText = billIdError
 
@@ -169,7 +169,7 @@ internal fun PaymentInputsBillContent(
                 placeHolder = secondTextFiledPlaceHolder,
                 placeHolderAlignment = Alignment.CenterEnd,
                 labelStyle = AppTheme.typography.text_12PX_16SP_B,
-                cursorColor = AppTheme.colorScheme.ivaTextFieldHint,
+                cursorColor = AppTheme.colorScheme.aboTextFieldHint,
                 isError = payIdError.isNotBlank(),
                 supportingText = payIdError
 

@@ -49,7 +49,7 @@ internal fun FrequentInternetContent(
             Text(
                 text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.frequent_package),
                 modifier = Modifier.align(Alignment.End),
-                color = AppTheme.colorScheme.ivaOutlineButtonText
+                color = AppTheme.colorScheme.aboOutlineButtonText
             )
         }
 
@@ -69,7 +69,7 @@ internal fun FrequentInternetContent(
                 ProvideTextStyle(value = AppTheme.typography.text_11PX_15SP_M) {
                     Text(
                         text = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.no_package_alert),
-                        color = AppTheme.colorScheme.ivaOutlineButtonText,
+                        color = AppTheme.colorScheme.aboOutlineButtonText,
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis,
                         modifier = Modifier

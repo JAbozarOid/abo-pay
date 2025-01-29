@@ -32,7 +32,7 @@
 
     <!-- Home -->
     <string name="bottom_nav_item_profile">پروفایل</string>
-    <string name="bottom_nav_item_iva">ابو پی\u200cپلاس</string>
+    <string name="bottom_nav_item_abo">ابو پی\u200cپلاس</string>
     <string name="bottom_nav_item_home">خانه</string>
     <string name="bottom_nav_item_wallet">کیف پول</string>
     <string name="bottom_nav_item_services">خدمات</string>

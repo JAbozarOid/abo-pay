@@ -28,7 +28,7 @@ import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
 import com.jabozaroid.abopay.core.designsystem.component.AppButton
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.FrequentManagerComponent
 import com.jabozaroid.abopay.core.designsystem.component.MobileContent
 import com.jabozaroid.abopay.core.designsystem.component.QuestionnaireBottomSheet
@@ -192,7 +192,7 @@ private fun ChargeHomeContent(
     ConstraintLayout(
         modifier = Modifier
             .fillMaxSize()
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
     ) {
         var isOperatorSelectedItem by remember {
             mutableStateOf(false)
@@ -317,7 +317,7 @@ private fun ChargeHomeContent(
 internal fun TarabordTextContent() {
     ProvideTextStyle(value = AppTheme.typography.text_9PX_12SP_M) {
         Text(
-            color = AppTheme.colorScheme.ivaOutlineButtonText,
+            color = AppTheme.colorScheme.aboOutlineButtonText,
             modifier = Modifier.padding(Dimens.size_4),
             style = AppTheme.typography.text_9PX_12SP_B.copy(
                 textDirection = TextDirection.Rtl

@@ -53,4 +53,8 @@ val Dark_Mood_80 = Color(0xFF404040)
 val Dark_Mood_60 = Color(0xFF4B4B4B)
 
 
+// messenger colors
+val Messenger_Green_Dark = Color(0xFF074B20)
+
+
 

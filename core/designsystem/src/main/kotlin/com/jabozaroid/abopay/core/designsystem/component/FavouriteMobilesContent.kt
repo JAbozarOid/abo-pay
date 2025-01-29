@@ -53,7 +53,7 @@ internal fun UserFavouriteMobilesContent(
             .border(
                 BorderStroke(
                     width = Dimens.size_1,
-                    color = AppTheme.colorScheme.ivaBackgroundScreen
+                    color = AppTheme.colorScheme.aboBackgroundScreen
                 )
             ),
     ) {
@@ -91,12 +91,12 @@ internal fun UserFavouriteMobilesContent(
                             ) {
                                 onDeleteUserFavoritePhoneNumber(item.phoneNumber)
                             },
-                        tint = AppTheme.colorScheme.ivaOutlineButtonText
+                        tint = AppTheme.colorScheme.aboOutlineButtonText
                     )
                     ProvideTextStyle(value = AppTheme.typography.text_9PX_12SP_M) {
                         Text(
                             text = item.phoneNumber,
-                            color = AppTheme.colorScheme.ivaOutlineButtonText,
+                            color = AppTheme.colorScheme.aboOutlineButtonText,
                             modifier = Modifier.padding(start = Dimens.size_8)
                         )
                     }
@@ -112,7 +112,7 @@ internal fun UserFavouriteMobilesContent(
                     ProvideTextStyle(value = AppTheme.typography.text_9PX_12SP_M) {
                         Text(
                             text = item.ownerPhoneNumber,
-                            color = AppTheme.colorScheme.ivaOutlineButtonText,
+                            color = AppTheme.colorScheme.aboOutlineButtonText,
                             modifier = Modifier.padding(end = Dimens.size_8)
                         )
                     }
@@ -148,7 +148,7 @@ internal fun DividerSection() {
                 end = Dimens.size_16,
             )
             .height(Dimens.size_1)
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
     )
 }
 //endregion

@@ -34,7 +34,7 @@ fun DestinationCardsContent(
             Text(
                 aboPayStringResource(id = R.string.no_destination_cards),
                 style = AppTheme.typography.text_12PX_16SP_M,
-                color = AppTheme.colorScheme.ivaTitleText3,
+                color = AppTheme.colorScheme.aboTitleText3,
                 textAlign = TextAlign.Center
             )
         }

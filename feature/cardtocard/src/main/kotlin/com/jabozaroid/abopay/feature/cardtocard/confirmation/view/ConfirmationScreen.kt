@@ -34,7 +34,7 @@ import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
 import com.jabozaroid.abopay.core.designsystem.component.AppOutlinedButton
 import com.jabozaroid.abopay.core.designsystem.component.AppPrimaryButton
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.DottedShape
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
@@ -101,7 +101,7 @@ class ConfirmationScreen : BaseScreen<ConfirmationUiModel, ConfirmationAction, C
         ConstraintLayout(
             modifier = Modifier
                 .fillMaxSize()
-                .background(AppTheme.colorScheme.ivaBackgroundScreen)
+                .background(AppTheme.colorScheme.aboBackgroundScreen)
         ) {
             val (toolbar, content, btnConfirm) = createRefs()
 
@@ -233,7 +233,7 @@ class ConfirmationScreen : BaseScreen<ConfirmationUiModel, ConfirmationAction, C
                     modifier = Modifier.padding(vertical = Dimens.size_15),
                     text = aboPayStringResource(R.string.agree_c2c_rules),
                     style = AppTheme.typography.text_12PX_16SP_B,
-                    color = AppTheme.colorScheme.ivaTitleText
+                    color = AppTheme.colorScheme.aboTitleText
                 )
             }
 
@@ -255,7 +255,7 @@ class ConfirmationScreen : BaseScreen<ConfirmationUiModel, ConfirmationAction, C
                     .padding(horizontal = Dimens.size_16)
                     .fillMaxWidth()
                     .background(
-                        color = AppTheme.colorScheme.ivaTitleText,
+                        color = AppTheme.colorScheme.aboTitleText,
                         shape = DottedShape(step = Dimens.size_10)
                     )
             )
@@ -278,7 +278,7 @@ class ConfirmationScreen : BaseScreen<ConfirmationUiModel, ConfirmationAction, C
                     .padding(horizontal = Dimens.size_16)
                     .fillMaxWidth()
                     .background(
-                        color = AppTheme.colorScheme.ivaTitleText,
+                        color = AppTheme.colorScheme.aboTitleText,
                         shape = DottedShape(step = Dimens.size_10)
                     )
             )
@@ -302,7 +302,7 @@ class ConfirmationScreen : BaseScreen<ConfirmationUiModel, ConfirmationAction, C
                     .fillMaxWidth()
                     .padding(horizontal = Dimens.size_16)
                     .background(
-                        color = AppTheme.colorScheme.ivaTitleText,
+                        color = AppTheme.colorScheme.aboTitleText,
                         shape = DottedShape(step = Dimens.size_10)
                     )
             )
@@ -330,7 +330,7 @@ class ConfirmationScreen : BaseScreen<ConfirmationUiModel, ConfirmationAction, C
                 style = AppTheme.typography.text_12PX_16SP_M.copy(
                     fontWeight = FontWeight.Bold
                 ),
-                color = AppTheme.colorScheme.ivaTitleText
+                color = AppTheme.colorScheme.aboTitleText
             )
 
             Text(
@@ -339,7 +339,7 @@ class ConfirmationScreen : BaseScreen<ConfirmationUiModel, ConfirmationAction, C
                 ),
                 text = aboPayStringResource(id = R.string.amount_in_rial),
                 modifier = Modifier.padding(all = Dimens.size_5),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
             )
 
         }

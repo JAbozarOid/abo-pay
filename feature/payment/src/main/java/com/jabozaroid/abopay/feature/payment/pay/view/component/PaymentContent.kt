@@ -27,7 +27,7 @@ internal fun WalletContent(modifier: Modifier) {
             Text(
                 textAlign = TextAlign.Center,
                 text = aboPayStringResource(R.string.not_available_service_message),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
             )
         }
 

@@ -41,6 +41,7 @@ import com.jabozaroid.abopay.core.designsystem.theme.designsystem.LocalAppBackgr
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.LocalAppColorScheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.LocalAppShape
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.LocalAppTypographyScheme
+import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Messenger_Green_Dark
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_05
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_10
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_100
@@ -54,22 +55,22 @@ private val darkColorScheme = AppColorScheme(
 
 
     //region TextColors
-    ivaTitleText = Gray_Dark_100,
-    ivaTitleText2 = Blue_Dark_50,
-    ivaTextFieldHint = Gray_Dark_20,
-    ivaDescriptionText = Gray_Dark_100,
-    ivaButtonText1 = Gray_Dark_100,
-    ivaIntroTitleText = Blue_Dark_80,
-    ivaOutlineButtonText = Gray_Dark_80,
-    ivaTextFieldBackground = Gray_Light_20,
+    aboTitleText = Gray_Dark_100,
+    aboTitleText2 = Blue_Dark_50,
+    aboTextFieldHint = Gray_Dark_20,
+    aboDescriptionText = Gray_Dark_100,
+    aboButtonText1 = Gray_Dark_100,
+    aboIntroTitleText = Blue_Dark_80,
+    aboOutlineButtonText = Gray_Dark_80,
+    aboTextFieldBackground = Gray_Light_20,
     //endregion
 
     //region Background of button colors
-    ivaBackgroundOutlineButton = Gray_Dark_40,
-    ivaBackgroundButton1 = Orange_100,
-    ivaBackgroundButton2 = Gray_Light_50,
-    ivaBackgroundButton3 = Blue_Light_60,
-    ivaDisableButtonBackground = Gray_Dark_10,
+    aboBackgroundOutlineButton = Gray_Dark_40,
+    aboBackgroundButton1 = Orange_100,
+    aboBackgroundButton2 = Gray_Light_50,
+    aboBackgroundButton3 = Blue_Light_60,
+    aboDisableButtonBackground = Gray_Dark_10,
     //endregion
     primary = Orange_80,
 
@@ -91,35 +92,36 @@ private val darkColorScheme = AppColorScheme(
     outline = Gray_Dark_100,
     surface = Color.Transparent,
     onSurface = Gray_Dark_100,
-    ivaDetailText = Gray_Dark_80,
-    ivaDetailDots = Gray_Dark_70,
-    ivaButtonSheetLine = Orange_80,
-    ivaDisableTextFieldOutline = Gray_Dark_20,
-    ivaDisableTextFieldLabel = Gray_Dark_100,
-    ivaDisableTextFieldHint = Gray_Dark_100,
-    ivaIconToolbar = Blue_Dark_50,
-    ivaDownloadButtonBackground = Orange_80,
-    ivaLine = Gray_Dark_10,
+    aboDetailText = Gray_Dark_80,
+    aboDetailDots = Gray_Dark_70,
+    aboButtonSheetLine = Orange_80,
+    aboDisableTextFieldOutline = Gray_Dark_20,
+    aboDisableTextFieldLabel = Gray_Dark_100,
+    aboDisableTextFieldHint = Gray_Dark_100,
+    aboIconToolbar = Blue_Dark_50,
+    aboDownloadButtonBackground = Orange_80,
+    aboLine = Gray_Dark_10,
     disable = Gray_Dark_60,
-    ivaBackgroundScreen = Gray_Light_90,
-    ivaWhiteBackground = Gray_Light_100,
-    ivaLightGrayBackground = Gray_Dark_70,
+    aboBackgroundScreen = Gray_Light_90,
+    aboWhiteBackground = Gray_Light_100,
+    aboLightGrayBackground = Gray_Dark_70,
 
     bottomNavItem = Orange_20,
-    ivaTimerBackground = Blue_Light_60,
-    ivaSwitchSelected = Orange_40,
-    ivaSwitchUnselected = Orange_10,
-    ivaCardBackground = Gray_Dark_10,
-    ivaNoticeTextColor = Gray_Dark_40,
-    ivaTitleText3 = Gray_Dark_70,
+    aboTimerBackground = Blue_Light_60,
+    aboSwitchSelected = Orange_40,
+    aboSwitchUnselected = Orange_10,
+    aboCardBackground = Gray_Dark_10,
+    aboNoticeTextColor = Gray_Dark_40,
+    aboTitleText3 = Gray_Dark_70,
     cardBackground = Gray_Dark_16,
 
-    ivaGraySwitchSelected = Gray_Dark_10,
-    ivaGraySwitchUnselected = Gray_Light_20,
+    aboGraySwitchSelected = Gray_Dark_10,
+    aboGraySwitchUnselected = Gray_Light_20,
 
-    ivaBalanceInformationBackground = Orange_05,
+    aboBalanceInformationBackground = Orange_05,
     kahrobaDivider = Gray_Dark_18,
-    kahrobaHelperCircle = Gray_Dark_01
+    kahrobaHelperCircle = Gray_Dark_01,
+    messengerBackground = Messenger_Green_Dark
 
 )
 
@@ -127,22 +129,22 @@ private val lightColorScheme = AppColorScheme(
 
 
     //region TextColors
-    ivaTitleText = Gray_Dark_100,
-    ivaTitleText2 = Blue_Dark_50,
-    ivaTextFieldHint = Gray_Dark_20,
-    ivaDescriptionText = Gray_Dark_100,
-    ivaButtonText1 = Gray_Dark_100,
-    ivaIntroTitleText = Blue_Dark_80,
-    ivaOutlineButtonText = Gray_Dark_80,
-    ivaTextFieldBackground = Gray_Light_20,
+    aboTitleText = Gray_Dark_100,
+    aboTitleText2 = Blue_Dark_50,
+    aboTextFieldHint = Gray_Dark_20,
+    aboDescriptionText = Gray_Dark_100,
+    aboButtonText1 = Gray_Dark_100,
+    aboIntroTitleText = Blue_Dark_80,
+    aboOutlineButtonText = Gray_Dark_80,
+    aboTextFieldBackground = Gray_Light_20,
     //endregion
 
     //region Background of button colors
-    ivaBackgroundOutlineButton = Gray_Dark_40,
-    ivaBackgroundButton1 = Orange_100,
-    ivaBackgroundButton2 = Gray_Light_50,
-    ivaBackgroundButton3 = Blue_Light_60,
-    ivaDisableButtonBackground = Gray_Dark_10,
+    aboBackgroundOutlineButton = Gray_Dark_40,
+    aboBackgroundButton1 = Orange_100,
+    aboBackgroundButton2 = Gray_Light_50,
+    aboBackgroundButton3 = Blue_Light_60,
+    aboDisableButtonBackground = Gray_Dark_10,
     //endregion
     primary = Orange_80,
 
@@ -164,37 +166,38 @@ private val lightColorScheme = AppColorScheme(
     outline = Gray_Dark_100,
     surface = Color.Transparent,
     onSurface = Gray_Dark_100,
-    ivaDetailText = Gray_Dark_80,
-    ivaDetailDots = Gray_Dark_70,
-    ivaButtonSheetLine = Orange_80,
-    ivaDisableTextFieldOutline = Gray_Dark_10,
-    ivaDisableTextFieldLabel = Gray_Dark_100,
-    ivaDisableTextFieldHint = Gray_Dark_10,
-    ivaIconToolbar = Blue_Dark_50,
-    ivaDownloadButtonBackground = Orange_80,
-    ivaLine = Gray_Dark_10,
+    aboDetailText = Gray_Dark_80,
+    aboDetailDots = Gray_Dark_70,
+    aboButtonSheetLine = Orange_80,
+    aboDisableTextFieldOutline = Gray_Dark_10,
+    aboDisableTextFieldLabel = Gray_Dark_100,
+    aboDisableTextFieldHint = Gray_Dark_10,
+    aboIconToolbar = Blue_Dark_50,
+    aboDownloadButtonBackground = Orange_80,
+    aboLine = Gray_Dark_10,
     disable = Gray_Dark_60,
 
-    ivaBackgroundScreen = Gray_Light_90,
-    ivaWhiteBackground = Gray_Light_100,
-    ivaLightGrayBackground = Gray_Dark_70,
+    aboBackgroundScreen = Gray_Light_90,
+    aboWhiteBackground = Gray_Light_100,
+    aboLightGrayBackground = Gray_Dark_70,
 
     bottomNavItem = Orange_20,
 
-    ivaTimerBackground = Blue_Light_60,
+    aboTimerBackground = Blue_Light_60,
 
-    ivaSwitchSelected = Orange_40,
-    ivaSwitchUnselected = Orange_10,
-    ivaCardBackground = Gray_Dark_10,
-    ivaNoticeTextColor = Gray_Dark_40,
-    ivaTitleText3 = Gray_Dark_70,
+    aboSwitchSelected = Orange_40,
+    aboSwitchUnselected = Orange_10,
+    aboCardBackground = Gray_Dark_10,
+    aboNoticeTextColor = Gray_Dark_40,
+    aboTitleText3 = Gray_Dark_70,
     cardBackground = Gray_Dark_16,
 
-    ivaGraySwitchSelected = Gray_Dark_10,
-    ivaGraySwitchUnselected = Gray_Light_20,
-    ivaBalanceInformationBackground = Orange_05,
+    aboGraySwitchSelected = Gray_Dark_10,
+    aboGraySwitchUnselected = Gray_Light_20,
+    aboBalanceInformationBackground = Orange_05,
     kahrobaDivider = Gray_Dark_18,
-    kahrobaHelperCircle = Gray_Dark_01
+    kahrobaHelperCircle = Gray_Dark_01,
+    messengerBackground = Messenger_Green_Dark
 
 )
 

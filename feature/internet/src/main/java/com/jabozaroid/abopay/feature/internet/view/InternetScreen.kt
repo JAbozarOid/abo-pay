@@ -29,7 +29,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
 import com.jabozaroid.abopay.core.designsystem.component.AppButton
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.designsystem.component.FrequentManagerComponent
 import com.jabozaroid.abopay.core.designsystem.component.MobileContent
@@ -191,7 +191,7 @@ private fun InternetHomeContent(
     ConstraintLayout(
         modifier = Modifier
             .fillMaxSize()
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
     ) {
         var isOperatorSelectedItem by remember {
             mutableStateOf(false)
@@ -315,7 +315,7 @@ private fun InternetHomeContent(
 @Composable
 internal fun TarabordTextContent() {
     Text(
-        color = AppTheme.colorScheme.ivaOutlineButtonText,
+        color = AppTheme.colorScheme.aboOutlineButtonText,
         modifier = Modifier.padding(Dimens.size_4),
         style = AppTheme.typography.text_9PX_12SP_B.copy(
             textDirection = TextDirection.Rtl
@@ -336,7 +336,7 @@ internal fun DividerSection() {
                 end = Dimens.size_16,
             )
             .height(Dimens.size_1)
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
     )
 }
 //endregion

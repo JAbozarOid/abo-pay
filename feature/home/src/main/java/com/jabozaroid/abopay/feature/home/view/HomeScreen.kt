@@ -96,7 +96,7 @@ class HomeScreen : BaseScreen<HomeUiModel, HomeAction, HomeEvent>(
         onClickToolbarRightIcon: () -> Unit,
     ) {
         Scaffold(
-            containerColor = AppTheme.colorScheme.ivaWhiteBackground,
+            containerColor = AppTheme.colorScheme.aboWhiteBackground,
             topBar = { HomeToolbar(onClickRightIcon = onClickToolbarRightIcon) },
             bottomBar = { HomeBottomNavigation() }
         ) { padding ->
@@ -218,7 +218,7 @@ class HomeScreen : BaseScreen<HomeUiModel, HomeAction, HomeEvent>(
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(size_16),
-                activeColor = AppTheme.colorScheme.ivaWhiteBackground
+                activeColor = AppTheme.colorScheme.aboWhiteBackground
             )
         }
     }
@@ -253,7 +253,7 @@ class HomeScreen : BaseScreen<HomeUiModel, HomeAction, HomeEvent>(
                     AppTextFieldLabelWithIcon(
                         modifier = Modifier.padding(end = size_8),
                         value = category.title,
-                        icon = if (category.id == 1) R.drawable.iva_plus_tag else -1,
+                        icon = if (category.id == 1) R.drawable.abo_pay_plus_tag else -1,
                         subtitle = if (category.description.isNotEmpty() && category.description.isNotBlank())
                             "(${category.description})"
                         else ""

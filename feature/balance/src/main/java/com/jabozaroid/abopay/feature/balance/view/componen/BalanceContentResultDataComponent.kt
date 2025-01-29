@@ -36,7 +36,7 @@ internal fun ContentResultData(
                     .padding(all = Dimens.size_5)
                     .weight(0.5f)
                     .basicMarquee(),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_11PX_15SP_B.copy(textDirection = TextDirection.Ltr)
 
@@ -46,7 +46,7 @@ internal fun ContentResultData(
                 Modifier
                     .padding(all = Dimens.size_5)
                     .weight(0.3f),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_11PX_15SP_B
 
@@ -67,7 +67,7 @@ internal fun ContentResultData(
                     .padding(all = Dimens.size_5)
                     .weight(1f)
                     .basicMarquee(),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B.copy(textDirection = TextDirection.Ltr)
             )
@@ -77,7 +77,7 @@ internal fun ContentResultData(
                 Modifier
                     .padding(all = Dimens.size_5)
                     .weight(0.5f),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B
             )
@@ -94,7 +94,7 @@ internal fun ContentResultData(
                     .padding(all = Dimens.size_5)
                     .weight(1f)
                     .basicMarquee(),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B.copy(textDirection = TextDirection.Ltr)
             )
@@ -104,7 +104,7 @@ internal fun ContentResultData(
                 Modifier
                     .padding(all = Dimens.size_5)
                     .weight(0.4f),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B
             )
@@ -122,7 +122,7 @@ internal fun ContentResultData(
                     .padding(all = Dimens.size_5)
                     .weight(1f)
                     .basicMarquee(),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B.copy(textDirection = TextDirection.Ltr)
             )
@@ -132,7 +132,7 @@ internal fun ContentResultData(
                 Modifier
                     .padding(all = Dimens.size_5)
                     .weight(0.4f),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B
             )
@@ -149,7 +149,7 @@ internal fun ContentResultData(
                     .padding(all = Dimens.size_5)
                     .weight(1f)
                     .basicMarquee(),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B.copy(textDirection = TextDirection.Ltr)
             )
@@ -160,7 +160,7 @@ internal fun ContentResultData(
                     Modifier
                         .padding(all = Dimens.size_5)
                         .weight(0.4f),
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     maxLines = 1,
                     style = AppTheme.typography.text_10PX_13SP_B
                 )
@@ -177,7 +177,7 @@ internal fun ContentResultData(
                     .padding(all = Dimens.size_5)
                     .weight(1f)
                     .basicMarquee(),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B.copy(textDirection = TextDirection.Ltr)
             )
@@ -188,7 +188,7 @@ internal fun ContentResultData(
                     Modifier
                         .padding(all = Dimens.size_5)
                         .weight(0.4f),
-                    color = AppTheme.colorScheme.ivaTitleText,
+                    color = AppTheme.colorScheme.aboTitleText,
                     maxLines = 1,
                     style = AppTheme.typography.text_10PX_13SP_B
                 )
@@ -205,7 +205,7 @@ internal fun ContentResultData(
                     .padding(all = Dimens.size_5)
                     .weight(1f)
                     .basicMarquee(),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B.copy(textDirection = TextDirection.Ltr)
             )
@@ -215,7 +215,7 @@ internal fun ContentResultData(
                 Modifier
                     .padding(all = Dimens.size_5)
                     .weight(0.8f),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 maxLines = 1,
                 style = AppTheme.typography.text_10PX_13SP_B
             )

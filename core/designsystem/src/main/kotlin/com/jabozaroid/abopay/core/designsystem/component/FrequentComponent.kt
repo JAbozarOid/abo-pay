@@ -78,7 +78,7 @@ fun FrequentComponent(
             )
             .clip(RoundedCornerShape(Dimens.size_12)),
 
-        border = BorderStroke(Dimens.size_1, AppTheme.colorScheme.ivaBackgroundScreen)
+        border = BorderStroke(Dimens.size_1, AppTheme.colorScheme.aboBackgroundScreen)
     ) {
 
         //box will handle the overlay view and the main view
@@ -90,7 +90,7 @@ fun FrequentComponent(
                     .clip(RoundedCornerShape(Dimens.size_10))
                     .fillMaxWidth()
                     .height(Dimens.size_100)
-                    .background(AppTheme.colorScheme.ivaWhiteBackground)
+                    .background(AppTheme.colorScheme.aboWhiteBackground)
             ) {
 
                 val (iconStartRef, textColumnRef, iconEndRef, dotLine) = createRefs()
@@ -99,7 +99,7 @@ fun FrequentComponent(
                 if (frequentUiModel.startIcon != 0)
                     Icon(
                         painter = painterResource(
-                            id = frequentUiModel.startIcon ?: R.drawable.ic_iva_placeholder
+                            id = frequentUiModel.startIcon ?: R.drawable.ic_abo_pay_placeholder
                         ),
                         contentDescription = "start icon",
                         modifier = Modifier
@@ -221,7 +221,7 @@ fun FrequentComponent(
             ) {
                 Box(
                     modifier = Modifier
-                        .background(AppTheme.colorScheme.ivaBackgroundButton2)
+                        .background(AppTheme.colorScheme.aboBackgroundButton2)
                 ) {
                     Image(modifier = Modifier
                         .padding(start = Dimens.size_14)
@@ -260,10 +260,10 @@ fun FrequentComponent(
                         ) {
                             if (frequentUiModel.overlayIcon1 != 0)
                                 Icon(
-                                    tint = AppTheme.colorScheme.ivaTitleText3,
+                                    tint = AppTheme.colorScheme.aboTitleText3,
                                     painter = painterResource(
                                         id = frequentUiModel.overlayIcon1
-                                            ?: R.drawable.ic_iva_placeholder
+                                            ?: R.drawable.ic_abo_pay_placeholder
                                     ),
                                     contentDescription = "remove overlay icon",
                                     modifier = Modifier
@@ -281,7 +281,7 @@ fun FrequentComponent(
                                 Text(
                                     modifier = Modifier.align(Alignment.BottomCenter),
                                     text = frequentUiModel.overlayText1,
-                                    color = AppTheme.colorScheme.ivaTitleText3
+                                    color = AppTheme.colorScheme.aboTitleText3
                                 )
                             }
                         }
@@ -298,10 +298,10 @@ fun FrequentComponent(
                         {
                             if (frequentUiModel.overlayIcon2 != 0)
                                 Icon(
-                                    tint = AppTheme.colorScheme.ivaTitleText3,
+                                    tint = AppTheme.colorScheme.aboTitleText3,
                                     painter = painterResource(
                                         id = frequentUiModel.overlayIcon2
-                                            ?: R.drawable.ic_iva_placeholder
+                                            ?: R.drawable.ic_abo_pay_placeholder
                                     ),
                                     contentDescription = "retry overlay icon",
                                     modifier = Modifier
@@ -321,7 +321,7 @@ fun FrequentComponent(
                                 Text(
                                     modifier = Modifier.align(Alignment.BottomCenter),
                                     text = frequentUiModel.overlayText2,
-                                    color = AppTheme.colorScheme.ivaTitleText3
+                                    color = AppTheme.colorScheme.aboTitleText3
                                 )
                             }
                         }

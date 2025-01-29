@@ -142,7 +142,7 @@ private fun BottomSheet(
                 text = title,
                 modifier = Modifier
                     .align(Alignment.Center),
-                color = AppTheme.colorScheme.ivaTitleText,
+                color = AppTheme.colorScheme.aboTitleText,
                 style = AppTheme.typography.text_13PX_17SP_M.copy(
                     fontWeight = FontWeight.W800
                 )

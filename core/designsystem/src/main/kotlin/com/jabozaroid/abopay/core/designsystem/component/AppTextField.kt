@@ -79,18 +79,18 @@ fun AppTextField(
     shape: Shape = RoundedCornerShape(Dimens.size_8),
     textAlign: TextAlign = TextAlign.Center,
     textDirection: TextDirection = TextDirection.Rtl,
-    cursorColor: Color = AppTheme.colorScheme.ivaTextFieldHint,
+    cursorColor: Color = AppTheme.colorScheme.aboTextFieldHint,
     labelStyle: TextStyle = AppTheme.typography.text_12PX_16SP_B.copy(fontWeight = FontWeight.W800),
     visualTransformation: VisualTransformation = VisualTransformation.None,
     colors: TextFieldColors = OutlinedTextFieldDefaults.colors(
-        disabledLabelColor = AppTheme.colorScheme.ivaBackgroundOutlineButton,
-        disabledContainerColor = AppTheme.colorScheme.ivaDisableButtonBackground,
-        disabledLeadingIconColor = AppTheme.colorScheme.ivaBackgroundOutlineButton,
-        disabledPlaceholderColor = AppTheme.colorScheme.ivaBackgroundOutlineButton,
-        disabledSupportingTextColor = AppTheme.colorScheme.ivaDisableButtonBackground,
-        disabledTextColor = AppTheme.colorScheme.ivaBackgroundOutlineButton,
-        disabledTrailingIconColor = AppTheme.colorScheme.ivaDisableButtonBackground,
-        disabledBorderColor = AppTheme.colorScheme.ivaDisableButtonBackground,
+        disabledLabelColor = AppTheme.colorScheme.aboBackgroundOutlineButton,
+        disabledContainerColor = AppTheme.colorScheme.aboDisableButtonBackground,
+        disabledLeadingIconColor = AppTheme.colorScheme.aboBackgroundOutlineButton,
+        disabledPlaceholderColor = AppTheme.colorScheme.aboBackgroundOutlineButton,
+        disabledSupportingTextColor = AppTheme.colorScheme.aboDisableButtonBackground,
+        disabledTextColor = AppTheme.colorScheme.aboBackgroundOutlineButton,
+        disabledTrailingIconColor = AppTheme.colorScheme.aboDisableButtonBackground,
+        disabledBorderColor = AppTheme.colorScheme.aboDisableButtonBackground,
 
         errorTextColor = AppTheme.colorScheme.error,
         errorCursorColor = AppTheme.colorScheme.error,
@@ -103,22 +103,22 @@ fun AppTextField(
         errorTrailingIconColor = AppTheme.colorScheme.error,
 
         unfocusedLabelColor = AppTheme.colorScheme.onSurface,
-        unfocusedBorderColor = AppTheme.colorScheme.ivaDisableTextFieldOutline,
-        unfocusedContainerColor = AppTheme.colorScheme.ivaTextFieldBackground,
-        unfocusedLeadingIconColor = AppTheme.colorScheme.ivaDetailDots,
-        unfocusedPlaceholderColor = AppTheme.colorScheme.ivaDisableTextFieldOutline,
-        unfocusedTextColor = AppTheme.colorScheme.ivaOutlineButtonText,
+        unfocusedBorderColor = AppTheme.colorScheme.aboDisableTextFieldOutline,
+        unfocusedContainerColor = AppTheme.colorScheme.aboTextFieldBackground,
+        unfocusedLeadingIconColor = AppTheme.colorScheme.aboDetailDots,
+        unfocusedPlaceholderColor = AppTheme.colorScheme.aboDisableTextFieldOutline,
+        unfocusedTextColor = AppTheme.colorScheme.aboOutlineButtonText,
         unfocusedSupportingTextColor = AppTheme.colorScheme.outline,
-        unfocusedTrailingIconColor = AppTheme.colorScheme.ivaDetailDots,
+        unfocusedTrailingIconColor = AppTheme.colorScheme.aboDetailDots,
 
-        focusedContainerColor = AppTheme.colorScheme.ivaTextFieldBackground,
-        focusedBorderColor = AppTheme.colorScheme.ivaDisableTextFieldOutline,
+        focusedContainerColor = AppTheme.colorScheme.aboTextFieldBackground,
+        focusedBorderColor = AppTheme.colorScheme.aboDisableTextFieldOutline,
         focusedLabelColor = AppTheme.colorScheme.primary,
-        focusedLeadingIconColor = AppTheme.colorScheme.ivaDetailDots,
-        focusedPlaceholderColor = AppTheme.colorScheme.ivaDisableTextFieldOutline,
-        focusedTextColor = AppTheme.colorScheme.ivaOutlineButtonText,
+        focusedLeadingIconColor = AppTheme.colorScheme.aboDetailDots,
+        focusedPlaceholderColor = AppTheme.colorScheme.aboDisableTextFieldOutline,
+        focusedTextColor = AppTheme.colorScheme.aboOutlineButtonText,
         focusedSupportingTextColor = AppTheme.colorScheme.onSurface,
-        focusedTrailingIconColor = AppTheme.colorScheme.ivaDetailDots,
+        focusedTrailingIconColor = AppTheme.colorScheme.aboDetailDots,
 
         cursorColor = cursorColor,
 
@@ -277,13 +277,13 @@ fun AppTextFieldLabel(
     labelStyle: TextStyle = AppTheme.typography.text_12PX_16SP_B.copy(
         fontWeight = FontWeight.W800
     ),
-    disabledTextColor: Color = AppTheme.colorScheme.ivaTitleText,
+    disabledTextColor: Color = AppTheme.colorScheme.aboTitleText,
     enable: Boolean = true,
 ) {
     ProvideTextStyle(value = labelStyle) {
         Text(
             textAlign = TextAlign.Center,
-            color = if (enable) AppTheme.colorScheme.ivaTitleText else disabledTextColor,
+            color = if (enable) AppTheme.colorScheme.aboTitleText else disabledTextColor,
             modifier = modifier,
             style = labelStyle,
             text = value
@@ -310,7 +310,7 @@ fun AppTextFieldLabelWithIcon(
             )
         Text(
             style = AppTheme.typography.text_11PX_15SP_B.copy(
-                color = AppTheme.colorScheme.ivaTitleText2
+                color = AppTheme.colorScheme.aboTitleText2
             ),
             text = value
         )
@@ -326,7 +326,7 @@ fun AppTextFieldPlaceHolder(value: String, modifier: Modifier = Modifier) {
             )
     ) {
         Text(
-            color = AppTheme.colorScheme.ivaTextFieldHint,
+            color = AppTheme.colorScheme.aboTextFieldHint,
             modifier = modifier,
             textAlign = TextAlign.Center,
             text = value
@@ -386,11 +386,11 @@ private fun OTPCharView(
                 .border(
                     Dimens.size_1, when {
                         isFocused -> AppTheme.colorScheme.primary
-                        else -> AppTheme.colorScheme.ivaDisableTextFieldHint
+                        else -> AppTheme.colorScheme.aboDisableTextFieldHint
                     }, RoundedCornerShape(Dimens.size_8)
                 )
                 .padding(Dimens.size_2)
-                .background(AppTheme.colorScheme.ivaTextFieldBackground),
+                .background(AppTheme.colorScheme.aboTextFieldBackground),
             text = char,
             color = if (isFocused) {
                 AppTheme.colorScheme.primary
@@ -408,7 +408,7 @@ private fun OTPCharView(
 @Composable
 fun AppTextFieldItemsLabel(value: String, modifier: Modifier = Modifier) {
     Text(
-        color = AppTheme.colorScheme.ivaTitleText,
+        color = AppTheme.colorScheme.aboTitleText,
         modifier = modifier,
         style = AppTheme.typography.text_8PX_10SP_B.copy(
             textAlign = TextAlign.Center

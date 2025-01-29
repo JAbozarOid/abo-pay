@@ -118,7 +118,7 @@ fun PageIndicatorView(
     isSelected: Boolean,
     defaultRadius: Dp,
     selectedLength: Dp,
-    defaultColor: Color = AppTheme.colorScheme.ivaBackgroundButton2,
+    defaultColor: Color = AppTheme.colorScheme.aboBackgroundButton2,
     selectedColor: Color = AppTheme.colorScheme.primary,
     animationDurationInMillis: Int,
 ) {

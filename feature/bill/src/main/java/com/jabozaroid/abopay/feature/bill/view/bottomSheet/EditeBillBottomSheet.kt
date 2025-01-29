@@ -150,7 +150,7 @@ internal fun EditeBillContent(
                 placeHolder = secondTextFiledPlaceHolder,
                 placeHolderAlignment = Alignment.CenterEnd,
                 labelStyle = AppTheme.typography.text_12PX_16SP_B,
-                cursorColor = AppTheme.colorScheme.ivaTextFieldHint,
+                cursorColor = AppTheme.colorScheme.aboTextFieldHint,
                 textAlign = TextAlign.Start
 
             )

@@ -49,7 +49,7 @@ fun AppButton(
     contentPadding: PaddingValues = PaddingValues(Dimens.size_0),
     colors: ButtonColors = ButtonDefaults.buttonColors(
         containerColor = AppTheme.colorScheme.primary,
-        contentColor = AppTheme.colorScheme.ivaButtonText1
+        contentColor = AppTheme.colorScheme.aboButtonText1
     ),
     isLoading: Boolean = false,
     content: @Composable RowScope.() -> Unit,
@@ -145,7 +145,7 @@ fun AppOutlinedButton(
     enabled: Boolean = true,
     contentPadding: PaddingValues = ButtonDefaults.ContentPadding,
     colors: ButtonColors = ButtonDefaults.outlinedButtonColors(
-        contentColor = AppTheme.colorScheme.ivaOutlineButtonText
+        contentColor = AppTheme.colorScheme.aboOutlineButtonText
     ),
     borderColor: Color = AppTheme.colorScheme.outline,
     content: @Composable RowScope.() -> Unit,

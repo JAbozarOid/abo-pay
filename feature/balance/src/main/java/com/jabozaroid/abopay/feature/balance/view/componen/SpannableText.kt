@@ -27,7 +27,7 @@ internal fun SpannableText(amount: String) {
     }
         Text(
             text = annotatedString,
-            color = AppTheme.colorScheme.ivaTitleText,
+            color = AppTheme.colorScheme.aboTitleText,
             textAlign = TextAlign.Right,
             style = AppTheme.typography.text_10PX_13SP_B
         )

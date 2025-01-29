@@ -15,7 +15,7 @@ import androidx.constraintlayout.compose.Dimension.Companion.fillToConstraints
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.google.gson.Gson
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
-import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
 import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
@@ -85,7 +85,7 @@ fun PaymentConfirmationContent(
     ConstraintLayout(
         modifier = Modifier
             .fillMaxSize()
-            .background(AppTheme.colorScheme.ivaBackgroundScreen)
+            .background(AppTheme.colorScheme.aboBackgroundScreen)
     ) {
         val (toolbar, content, buttonRow) = createRefs()
 
