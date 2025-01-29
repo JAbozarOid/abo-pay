@@ -72,9 +72,11 @@ data class AppColorScheme(
     val kahrobaDivider: Color,
     val kahrobaHelperCircle: Color,
 
-    val messengerBackground: Color
+    val messengerDarkBackground: Color,
+    val messengerLightBackground: Color,
 
-)
+
+    )
 
 /**
  * A composition local for [AppColorScheme]
@@ -140,6 +142,7 @@ val LocalAppColorScheme = staticCompositionLocalOf {
         aboBalanceInformationBackground = Color.Unspecified,
         kahrobaDivider = Color.Unspecified,
         kahrobaHelperCircle = Color.Unspecified,
-        messengerBackground = Color.Unspecified
+        messengerDarkBackground = Color.Unspecified,
+        messengerLightBackground = Color.Unspecified
     )
 }

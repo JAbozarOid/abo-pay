@@ -29,7 +29,7 @@ import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.common.util.share.SharingFileType
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
 import com.jabozaroid.abopay.core.designsystem.component.AppPrimaryButton
-import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
 import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.designsystem.component.SwitchWithLabel
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme

@@ -34,7 +34,7 @@ import com.jabozaroid.abopay.core.designsystem.component.AppTab
 import com.jabozaroid.abopay.core.designsystem.component.AppTabRow
 import com.jabozaroid.abopay.core.designsystem.component.AppTag
 import com.jabozaroid.abopay.core.designsystem.component.AppTextButton
-import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.HorizontalFeatureList
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.component.model.AmountUiModel

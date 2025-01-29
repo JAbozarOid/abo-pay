@@ -55,6 +55,7 @@ val Dark_Mood_60 = Color(0xFF4B4B4B)
 
 // messenger colors
 val Messenger_Green_Dark = Color(0xFF074B20)
+val Messenger_Green_Light = Color(0xFF25A855)
 
 
 

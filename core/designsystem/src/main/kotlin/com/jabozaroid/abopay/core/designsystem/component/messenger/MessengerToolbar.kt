@@ -1,12 +1,10 @@
-package com.jabozaroid.abopay.core.designsystem.component.toolbar
+package com.jabozaroid.abopay.core.designsystem.component.messenger
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -17,7 +15,6 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
@@ -44,7 +41,7 @@ fun MessengerToolbar(
             .clip(RoundedCornerShape(Dimens.size_12)),
         tonalElevation = Dimens.size_4,
         shadowElevation = Dimens.size_4,
-        color = AppTheme.colorScheme.messengerBackground,
+        color = AppTheme.colorScheme.messengerDarkBackground,
         border = BorderStroke(0.25.dp, AppTheme.colorScheme.surface)
     ) {
         ConstraintLayout(

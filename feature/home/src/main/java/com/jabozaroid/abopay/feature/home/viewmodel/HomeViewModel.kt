@@ -115,7 +115,7 @@ class HomeViewModel @Inject constructor(
             HomeAction.NavigateToKahroba -> {
                 navigateTo(
                     NavigationCommand.ToScreen(
-                        ApplicationRoutes.kahrobaGraphRoute
+                        ApplicationRoutes.messengerGraphRoute
                     )
                 )
             }
