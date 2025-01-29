@@ -1,6 +1,7 @@
 package com.jabozaroid.abopay.core.designsystem.component.messenger
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -23,8 +24,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.jabozaroid.abopay.core.designsystem.R
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
@@ -33,6 +37,7 @@ import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
 fun MessengerTabComponent(
     modifier: Modifier = Modifier,
     titles: List<String> = listOf(),
+    tabIcon: Int = R.drawable.ic_camera,
     initialSelectedIndex: Int = 0,
     onTitleSelected: (Int) -> Unit = {},
     cardBackgroundColor: Color = AppTheme.colorScheme.messengerDarkBackground,
@@ -85,12 +90,21 @@ fun MessengerTabComponent(
                         )
                         .padding(vertical = Dimens.size_8)
                 ) {
-                    Text(
-                        text = title, color = textColor, fontSize = 16.sp,
-                        style = AppTheme.typography.text_9PX_12SP_M.copy(
-                            fontWeight = FontWeight.W800
-                        ),
-                    )
+                    if (index == 0) {
+                        Image(
+                            painter = painterResource(id = tabIcon), // Replace with your image
+                            contentDescription = "Home Icon",
+                            colorFilter = ColorFilter.tint(textColor)
+                        )
+                    } else {
+                        Text(
+                            text = title, color = textColor, fontSize = 16.sp,
+                            style = AppTheme.typography.text_9PX_12SP_M.copy(
+                                fontWeight = FontWeight.W800
+                            ),
+                        )
+                    }
+
                 }
             }
         }
@@ -102,6 +116,6 @@ fun MessengerTabComponent(
 @Composable
 fun PreviewSwitchComponent() {
     AppTheme {
-        MessengerTabComponent(titles = listOf("CHATS", "STATUS", "CALLS"), onTitleSelected = {})
+        MessengerTabComponent(titles = listOf("", "CHATS", "STATUS", "CALLS"), onTitleSelected = {})
     }
 }
