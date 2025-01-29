@@ -32,7 +32,7 @@ import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppPrimaryButton
 import com.jabozaroid.abopay.core.designsystem.component.AppTextField
-import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens

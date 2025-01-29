@@ -21,7 +21,7 @@ object ApplicationRoutes {
     const val c2cConfirmationGraphRoute = "c2c_confirmation_graph_route"
     const val cardManagementGraphRoute = "card_management_graph_route"
     const val kahrobaGraphRoute = "kahroba_graph_route"
-    const val homeMessengerRoute = "home_messenger_route"
+    const val messengerGraphRoute = "messenger_graph_route"
     //endregion
 
 
@@ -47,7 +47,7 @@ object ApplicationRoutes {
     const val kahrobaScreenRoute = "kahroba_screen_route"
     const val nfcScreenRoute = "nfc_screen_route"
     const val kahrobaAuthScreenRoute = "kahroba_auth_screen_route"
-    const val homeMessengerScreenRoute = "home_messenger_screen_route"
+    const val messengerScreenRoute = "messenger_screen_route"
     //endregion
 
     //region Params

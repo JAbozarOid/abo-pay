@@ -42,6 +42,7 @@ import com.jabozaroid.abopay.core.designsystem.theme.designsystem.LocalAppColorS
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.LocalAppShape
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.LocalAppTypographyScheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Messenger_Green_Dark
+import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Messenger_Green_Light
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_05
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_10
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_100
@@ -121,7 +122,8 @@ private val darkColorScheme = AppColorScheme(
     aboBalanceInformationBackground = Orange_05,
     kahrobaDivider = Gray_Dark_18,
     kahrobaHelperCircle = Gray_Dark_01,
-    messengerBackground = Messenger_Green_Dark
+    messengerDarkBackground = Messenger_Green_Dark,
+    messengerLightBackground = Messenger_Green_Light
 
 )
 
@@ -197,7 +199,8 @@ private val lightColorScheme = AppColorScheme(
     aboBalanceInformationBackground = Orange_05,
     kahrobaDivider = Gray_Dark_18,
     kahrobaHelperCircle = Gray_Dark_01,
-    messengerBackground = Messenger_Green_Dark
+    messengerDarkBackground = Messenger_Green_Dark,
+    messengerLightBackground = Messenger_Green_Light
 
 )
 

@@ -31,7 +31,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.component.AppBackground
-import com.jabozaroid.abopay.core.designsystem.component.toolbar.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
 import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.designsystem.component.SwitchComponent
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews

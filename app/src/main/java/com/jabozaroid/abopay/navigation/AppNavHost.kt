@@ -14,6 +14,7 @@ import com.jabozaroid.abopay.feature.internet.internetGraph
 import com.jabozaroid.abopay.feature.intro.introGraph
 import com.jabozaroid.abopay.feature.kahroba.kahrobaGraph
 import com.jabozaroid.abopay.feature.login.loginGraph
+import com.jabozaroid.abopay.feature.messenger.messengerGraph
 import com.jabozaroid.abopay.feature.payment.paymentGraph
 import com.jabozaroid.abopay.feature.webview.webViewGraph
 
@@ -40,6 +41,6 @@ fun AppNavHost(
             balanceGraph()
             cardManagementGraph()
             kahrobaGraph()
-
+            messengerGraph()
         }
 }

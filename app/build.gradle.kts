@@ -37,7 +37,8 @@ android {
 
         val release by getting {
             isMinifyEnabled = true
-            applicationIdSuffix = com.jabozaroid.abopay.ProjectBuildTypes.RELEASE.applicationIdSuffix
+            applicationIdSuffix =
+                com.jabozaroid.abopay.ProjectBuildTypes.RELEASE.applicationIdSuffix
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -80,7 +81,7 @@ dependencies {
     implementation(projects.feature.balance)
     implementation(projects.feature.cardmanagement)
     implementation(projects.feature.kahroba)
-
+    implementation(projects.feature.messenger)
     implementation(projects.core.database)
     implementation(projects.core.network)
     implementation(projects.core.data)

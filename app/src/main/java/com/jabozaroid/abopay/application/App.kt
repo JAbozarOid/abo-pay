@@ -15,7 +15,7 @@ import com.jabozaroid.abopay.core.designsystem.component.AppBackground
 import com.jabozaroid.abopay.core.designsystem.component.CustomSnackBar
 import com.jabozaroid.abopay.core.designsystem.component.SnackState
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
-import com.jabozaroid.abopay.core.designsystem.component.toolbar.TopAppBar
+import com.jabozaroid.abopay.core.designsystem.component.TopAppBar
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.domain.model.user.User
 import com.jabozaroid.abopay.core.ui.helper.LocalNavController

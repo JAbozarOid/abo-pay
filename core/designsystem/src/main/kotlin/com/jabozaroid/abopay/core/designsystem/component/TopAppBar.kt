@@ -1,4 +1,4 @@
-package com.jabozaroid.abopay.core.designsystem.component.toolbar
+package com.jabozaroid.abopay.core.designsystem.component
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.BorderStroke
@@ -32,7 +32,6 @@ import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
 import com.jabozaroid.abopay.core.designsystem.R
-import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
 
