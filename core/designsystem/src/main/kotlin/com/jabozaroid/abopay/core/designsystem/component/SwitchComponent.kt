@@ -17,6 +17,7 @@ import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -42,7 +43,7 @@ fun SwitchComponent(
     cardContentPadding: PaddingValues = PaddingValues(Dimens.size_16),
 ) {
 
-    var selectedIndex by remember { mutableStateOf(initialSelectedIndex) }
+    var selectedIndex by remember { mutableIntStateOf(initialSelectedIndex) }
 
 
     Card(
