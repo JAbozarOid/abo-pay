@@ -18,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.component.messenger.MessengerTabComponent
 import com.jabozaroid.abopay.core.designsystem.component.messenger.MessengerToolbar
@@ -29,7 +30,8 @@ import com.jabozaroid.abopay.feature.messenger.model.home.MessengerHomeAction
 import com.jabozaroid.abopay.feature.messenger.model.home.MessengerHomeEvent
 import com.jabozaroid.abopay.feature.messenger.model.home.MessengerHomeUiModel
 import com.jabozaroid.abopay.feature.messenger.view.chats.ChatScreen
-import com.jabozaroid.abopay.feature.messenger.view.chats.ChatUiModel
+import com.jabozaroid.abopay.feature.messenger.model.chats
+import com.jabozaroid.abopay.feature.messenger.model.chats.ChatUiModel
 import com.jabozaroid.abopay.feature.messenger.viewmodel.MessengerHomeViewModel
 
 class MessengerHomeScreen :
@@ -42,14 +44,17 @@ class MessengerHomeScreen :
 
     @Composable
     override fun Content(state: MessengerHomeUiModel) {
-        MainContent(state)
+        val viewModel = ViewModel()
+        MainContent(state, onChatItemClicked = { chatModel ->
+            viewModel.process(action = MessengerHomeAction.OnChatItemClicked(chatModel))
+        })
     }
 
 
 }
 
 @Composable
-internal fun MainContent(state: MessengerHomeUiModel) {
+internal fun MainContent(state: MessengerHomeUiModel, onChatItemClicked: (ChatUiModel) -> Unit) {
 
     var selectedItem by remember { mutableIntStateOf(0) }
 
@@ -105,7 +110,9 @@ internal fun MainContent(state: MessengerHomeUiModel) {
                 }
 
                 1 -> {
-                    ChatScreen(chats)
+                    ChatScreen(chats) {
+                        onChatItemClicked(it)
+                    }
                 }
 
             }
@@ -114,44 +121,12 @@ internal fun MainContent(state: MessengerHomeUiModel) {
     }
 }
 
-val chats : List<ChatUiModel> =
-    listOf(
-        ChatUiModel(
-            profileImageUrl = null,
-            username = "Abozar rbdt",
-            lastMsg = "Please send me your id",
-            msgDate = "Yesterday",
-            msgNumber = "10"
-        ),
-        ChatUiModel(
-            profileImageUrl = null,
-            username = "+98912895589",
-            lastMsg = "school time is on 7:00",
-            msgDate = "1/29/2025",
-            msgNumber = "5"
-        ),
-        ChatUiModel(
-            profileImageUrl = null,
-            username = "04408965987",
-            lastMsg = "Please send me your id",
-            msgDate = "Yesterday",
-            msgNumber = "56"
-        ),
-        ChatUiModel(
-            profileImageUrl = null,
-            username = "Eli.m",
-            lastMsg = "Meeting room c.215",
-            msgDate = "2/5/2023",
-            msgNumber = "170"
-        ),
-    )
-
 
 @Preview(showBackground = true)
 @ThemePreviews
 @Composable
 internal fun PreviewMessengerHomeContent() {
     AppTheme {
-        MainContent(MessengerHomeUiModel())
+        MainContent(MessengerHomeUiModel()) {}
     }
 }

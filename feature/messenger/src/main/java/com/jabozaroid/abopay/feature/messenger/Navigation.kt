@@ -4,9 +4,11 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.navigation
 import com.jabozaroid.abopay.core.ui.helper.registerDestination
 import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
+import com.jabozaroid.abopay.feature.messenger.view.detail.MessengerDetailScreen
 import com.jabozaroid.abopay.feature.messenger.view.home.MessengerHomeScreen
 
 val messengerHomeScreen = MessengerHomeScreen()
+val messengerDetailScreen = MessengerDetailScreen()
 
 fun NavGraphBuilder.messengerGraph() {
     navigation(
@@ -15,6 +17,7 @@ fun NavGraphBuilder.messengerGraph() {
     ) {
 
         registerDestination(messengerHomeScreen)
+        registerDestination(messengerDetailScreen)
 
     }
 }

@@ -2,6 +2,7 @@ package com.jabozaroid.abopay.feature.messenger.view.chats
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -32,11 +33,13 @@ import coil.compose.rememberAsyncImagePainter
 import com.jabozaroid.abopay.R
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
+import com.jabozaroid.abopay.feature.messenger.model.chats.ChatUiModel
 
 // done all icon
 @Composable
 fun ChatCard(
     chatUiModel: ChatUiModel,
+    onItemClicked: () -> Unit
 ) {
     Card(
         modifier = Modifier
@@ -51,6 +54,9 @@ fun ChatCard(
                 .fillMaxWidth()
                 .padding(Dimens.size_8)
                 .fillMaxHeight()
+                .clickable {
+                    onItemClicked()
+                }
         ) {
             ConstraintLayout(
                 modifier = Modifier.fillMaxWidth()
@@ -59,7 +65,9 @@ fun ChatCard(
 
                 // Circular Profile Image
                 Image(painter = chatUiModel.profileImageUrl?.let { rememberAsyncImagePainter(it) }
-                    ?: painterResource(id = R.drawable.ic_person), // Replace with your placeholder
+                    ?: if (!chatUiModel.isGroup)
+                        painterResource(id = R.drawable.ic_person)
+                    else painterResource(id = R.drawable.ic_groups), // Replace with your placeholder
                     contentDescription = "Profile Image",
                     modifier = Modifier
                         .constrainAs(profileRef) {
@@ -88,7 +96,7 @@ fun ChatCard(
                         fontWeight = FontWeight.Bold,
                         fontSize = 16.sp
                     )
-                    Text(text = chatUiModel.lastMsg, color = Color.Gray, fontSize = 14.sp)
+                    Text(text = chatUiModel.currentMsg, color = Color.Gray, fontSize = 14.sp)
                 }
 
                 // Text & Small Circular Number
@@ -101,7 +109,7 @@ fun ChatCard(
                     horizontalAlignment = Alignment.End,
                     verticalArrangement = Arrangement.Center
                 ) {
-                    Text(text = chatUiModel.msgDate, fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                    Text(text = chatUiModel.time, fontWeight = FontWeight.Bold, fontSize = 16.sp)
 
                     // Small Circle with Number
                     Box(
@@ -133,10 +141,12 @@ fun PreviewChatCard() {
             ChatUiModel(
                 profileImageUrl = null,
                 username = "Abozar rbdt",
-                lastMsg = "Please send me your id",
-                msgDate = "Yesterday",
+                currentMsg = "Please send me your id",
+                time = "Yesterday",
+                isGroup = true,
                 msgNumber = "10" // Number inside the small green circle
-            )
+            ),
+            {}
         )
     }
 }
