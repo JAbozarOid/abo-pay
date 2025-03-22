@@ -15,6 +15,10 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -54,6 +58,9 @@ class MessengerDetailScreen :
 
 @Composable
 fun MainContent(state: MessengerHomeUiModel) {
+
+    var message by remember { mutableStateOf("") }
+
     ConstraintLayout(
         modifier = Modifier
             .fillMaxSize()
@@ -97,6 +104,7 @@ fun MainContent(state: MessengerHomeUiModel) {
             ) {
                 val (chats, inputChat) = createRefs()
 
+                //region input message
                 Row(
                     modifier = Modifier.constrainAs(inputChat) {
                         bottom.linkTo(parent.bottom)
@@ -111,8 +119,10 @@ fun MainContent(state: MessengerHomeUiModel) {
                         modifier = Modifier
                             .weight(1f)
                             .padding(Dimens.size_4),
-                        value = "",
-                        onValueChange = {},
+                        value = message,
+                        onValueChange = {
+                            message = it
+                        },
                         placeHolder = "Type a message"
                     )
                     Box(
@@ -130,6 +140,9 @@ fun MainContent(state: MessengerHomeUiModel) {
                         )
                     }
                 }
+                //endregion
+
+
             }
 
 
