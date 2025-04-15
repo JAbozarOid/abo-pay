@@ -6,6 +6,7 @@ import com.jabozaroid.abopay.core.data.dataSource.bill.BillRemoteDataSource
 import com.jabozaroid.abopay.core.data.dataSource.c2c.C2CDataSource
 import com.jabozaroid.abopay.core.data.dataSource.cardmanagement.CardManagementRemoteDataSource
 import com.jabozaroid.abopay.core.data.dataSource.charge.ChargeRemoteDataSource
+import com.jabozaroid.abopay.core.data.dataSource.finndow.ShadowingPracticeRemoteDataSource
 import com.jabozaroid.abopay.core.data.dataSource.home.HomeServicesRemoteDataSource
 import com.jabozaroid.abopay.core.data.dataSource.internet.InternetRemoteDataSource
 import com.jabozaroid.abopay.core.data.dataSource.payment.PaymentDataSource
@@ -17,6 +18,7 @@ import com.jabozaroid.abopay.core.network.dataSource.c2c.C2CMockDataSourceImpl
 import com.jabozaroid.abopay.core.network.dataSource.c2c.C2CRemoteDataSourceImp
 import com.jabozaroid.abopay.core.network.dataSource.cardmanagement.CardManagementRemoteDataSourceImpl
 import com.jabozaroid.abopay.core.network.dataSource.charge.ChargeRemoteDataSourceImpl
+import com.jabozaroid.abopay.core.network.dataSource.finndow.ShadowingPracticeRemoteDataSourceImpl
 import com.jabozaroid.abopay.core.network.dataSource.home.HomeServicesMockDataSourceImpl
 import com.jabozaroid.abopay.core.network.dataSource.home.HomeServicesRemoteDataSourceImpl
 import com.jabozaroid.abopay.core.network.dataSource.internet.InternetMockDataSourceImpl
@@ -92,6 +94,9 @@ abstract class DataSourceModule {
     @Binds
     @Named(com.jabozaroid.abopay.core.common.PAYMENT_MOCK_DATASOURCE)
     abstract fun bindPaymentMockDataSource(paymentMockDataSource: PaymentMockDataSourceImpl): PaymentDataSource
+
+    @Binds
+    abstract fun bindShadowingPracticeRemoteDataSource(shadowingPracticeRemoteDataSourceImpl: ShadowingPracticeRemoteDataSourceImpl): ShadowingPracticeRemoteDataSource
 }
 
 

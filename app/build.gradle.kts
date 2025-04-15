@@ -93,9 +93,10 @@ dependencies {
     implementation(projects.core.model)
     implementation(projects.core.domain)
     implementation(projects.core.offlinestorage)
+    implementation(projects.feature.finndow)
+
     implementation(libs.material)
     implementation(libs.constraintlayout)
-
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)

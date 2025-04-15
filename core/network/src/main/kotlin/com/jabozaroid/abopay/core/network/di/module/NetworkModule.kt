@@ -7,6 +7,7 @@ import com.jabozaroid.abopay.core.network.api.bill.BillApi
 import com.jabozaroid.abopay.core.network.api.c2c.CardToCardApi
 import com.jabozaroid.abopay.core.network.api.cardmanagement.CardManagementApi
 import com.jabozaroid.abopay.core.network.api.charge.ChargeApi
+import com.jabozaroid.abopay.core.network.api.finndow.ShadowingPracticeApi
 import com.jabozaroid.abopay.core.network.api.home.HomeServicesApi
 import com.jabozaroid.abopay.core.network.api.internet.InternetApi
 import com.jabozaroid.abopay.core.network.api.payment.PaymentApi
@@ -23,8 +24,10 @@ import dagger.multibindings.IntoMap
 import okhttp3.Interceptor
 import retrofit2.Retrofit
 
-private const val BASE_URL = "http://172.24.34.95:1080/"
+//private const val BASE_URL = "http://172.24.34.95:1080/"
 //private const val BASE_URL = "http://172.24.34.67:3009/"
+private const val finndow_base_url = "http://192.168.1.17:4000/"
+
 @Module
 @InstallIn(SingletonComponent::class)
 class NetworkModule {
@@ -36,7 +39,7 @@ class NetworkModule {
         interceptorsMap: Map<Int, @JvmSuppressWildcards Interceptor>,
     ): Retrofit {
         return RetrofitHelper.createRetrofit(
-            BASE_URL,
+            finndow_base_url,
             interceptorMap = interceptorsMap
         )
     }
@@ -69,7 +72,7 @@ class NetworkModule {
     }
 
     @Provides
-    fun provideChargeApi(retrofit: Retrofit) : ChargeApi {
+    fun provideChargeApi(retrofit: Retrofit): ChargeApi {
         return retrofit.create(ChargeApi::class.java)
     }
 
@@ -122,5 +125,13 @@ class NetworkModule {
     ): PaymentApi {
         return retrofit.create(PaymentApi::class.java)
     }
+
+    @Provides
+    fun providerShadowingPracticeApi(
+        retrofit: Retrofit,
+    ): ShadowingPracticeApi {
+        return retrofit.create(ShadowingPracticeApi::class.java)
+    }
+
     //endregion
 }

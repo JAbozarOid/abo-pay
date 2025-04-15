@@ -23,6 +23,8 @@ object ApplicationRoutes {
     const val kahrobaGraphRoute = "kahroba_graph_route"
     const val messengerGraphRoute = "messenger_graph_route"
     const val messengerDetailGraphRoute = "messenger_detail_graph_route"
+
+    const val finndowHomeGraphRoute = "finndow_home_graph_route"
     //endregion
 
 
@@ -51,6 +53,8 @@ object ApplicationRoutes {
 
     const val messengerScreenRoute = "messenger_screen_route"
     const val messengerDetailScreenRoute = "messenger_detail_screen_route"
+
+    const val finndowHomeScreenRoute = "finndow_home_screen_route"
     //endregion
 
     //region Params

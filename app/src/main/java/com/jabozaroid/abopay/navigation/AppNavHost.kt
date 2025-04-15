@@ -9,6 +9,7 @@ import com.jabozaroid.abopay.feature.bill.billGraph
 import com.jabozaroid.abopay.feature.cardmanagement.cardManagementGraph
 import com.jabozaroid.abopay.feature.cardtocard.cardToCardGraph
 import com.jabozaroid.abopay.feature.charge.chargeGraph
+import com.jabozaroid.abopay.feature.finndow.finndowGraph
 import com.jabozaroid.abopay.feature.home.homeGraph
 import com.jabozaroid.abopay.feature.internet.internetGraph
 import com.jabozaroid.abopay.feature.intro.introGraph
@@ -42,5 +43,6 @@ fun AppNavHost(
             cardManagementGraph()
             kahrobaGraph()
             messengerGraph()
+            finndowGraph()
         }
 }

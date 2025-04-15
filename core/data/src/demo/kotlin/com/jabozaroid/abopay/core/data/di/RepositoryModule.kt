@@ -6,6 +6,7 @@ import com.jabozaroid.abopay.core.data.repository.bill.BillRepositoryImpl
 import com.jabozaroid.abopay.core.data.repository.c2c.C2CRepositoryImp
 import com.jabozaroid.abopay.core.data.repository.cardmanagement.CardManagementRepositoryImpl
 import com.jabozaroid.abopay.core.data.repository.charge.ChargeRepositoryImpl
+import com.jabozaroid.abopay.core.data.repository.finndow.ShadowingPracticeRepositoryImpl
 import com.jabozaroid.abopay.core.data.repository.home.HomeServicesRepositoryImpl
 import com.jabozaroid.abopay.core.data.repository.internet.InternetRepositoryImpl
 import com.jabozaroid.abopay.core.data.repository.payment.PaymentRepositoryImp
@@ -16,6 +17,7 @@ import com.jabozaroid.abopay.core.domain.repository.bill.BillRepository
 import com.jabozaroid.abopay.core.domain.repository.c2c.C2CRepository
 import com.jabozaroid.abopay.core.domain.repository.cardmanagement.CardManagementRepository
 import com.jabozaroid.abopay.core.domain.repository.charge.ChargeRepository
+import com.jabozaroid.abopay.core.domain.repository.finndow.ShadowingPracticeRepository
 import com.jabozaroid.abopay.core.domain.repository.home.HomeServicesRepository
 import com.jabozaroid.abopay.core.domain.repository.internet.InternetRepository
 import com.jabozaroid.abopay.core.domain.repository.payment.PaymentRepository
@@ -59,4 +61,8 @@ abstract class RepositoryModule {
 
     @Binds
     abstract fun bindPaymentRepository(paymentRepositoryImp: PaymentRepositoryImp): PaymentRepository
+
+    @Binds
+    abstract fun bindShadowingPracticeRepository(shadowingPracticeRepositoryImpl: ShadowingPracticeRepositoryImpl): ShadowingPracticeRepository
+
 }

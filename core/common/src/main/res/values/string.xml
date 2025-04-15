@@ -281,5 +281,9 @@
     <string name="password">رمز عبور</string>
     <string name="confirm_password">تکرار رمز عبور</string>
 
+    <!-- finndow -->
+    <string name="finndow_title">Learning Finnish</string>
+    <string name="shadowing_practices">Shadowing practices</string>
+
 
 </resources>
