@@ -1,0 +1,222 @@
+package com.jabozaroid.abopay.feature.finndow.view.auth
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.ProvideTextStyle
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.compositionLocalOf
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.constraintlayout.compose.ConstraintLayout
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.jabozaroid.abopay.core.common.R
+import com.jabozaroid.abopay.core.common.util.aboPayStringResource
+import com.jabozaroid.abopay.core.designsystem.component.AppButton
+import com.jabozaroid.abopay.core.designsystem.component.AppTextField
+import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
+import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
+import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
+import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
+import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
+import com.jabozaroid.abopay.core.ui.view.BaseScreen
+import com.jabozaroid.abopay.feature.finndow.model.auth.FinndowAuthAction
+import com.jabozaroid.abopay.feature.finndow.model.auth.FinndowAuthEvent
+import com.jabozaroid.abopay.feature.finndow.model.auth.FinndowAuthUiModel
+import com.jabozaroid.abopay.feature.finndow.viewmodel.FinndowAuthViewModel
+
+class FinndowAuthScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, FinndowAuthEvent>(
+    route = ApplicationRoutes.finndowAuthScreenRoute, name = "FinndowAuthScreen"
+) {
+    @Composable
+    override fun ViewModel(): FinndowAuthViewModel = hiltViewModel()
+
+    @Composable
+    override fun Content(state: FinndowAuthUiModel) {
+        val viewModel = ViewModel()
+
+        MainContent()
+    }
+
+    @Composable
+    private fun MainContent() {
+        ConstraintLayout(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(AppTheme.colorScheme.aboBackgroundScreen)
+        ) {
+
+            val (toolbarRef, content) = createRefs()
+            AppToolbar(
+                rightIcon = null,
+                modifier = Modifier
+                    .constrainAs(toolbarRef) {
+                        top.linkTo(parent.top)
+                        start.linkTo(parent.start)
+                        end.linkTo(parent.end)
+                    }
+                    .padding(top = Dimens.size_8)
+                    .fillMaxWidth(),
+                toolbarTitle = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.finndow_auth_title),
+                onRightIconClicked = {}
+            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(
+                        top = Dimens.size_4,
+                        start = Dimens.size_8,
+                        end = Dimens.size_8,
+                        bottom = Dimens.size_8
+                    )
+                    .clip(RoundedCornerShape(Dimens.size_12))
+                    .background(AppTheme.colorScheme.background)
+                    .constrainAs(
+                        content
+                    ) {
+                        top.linkTo(toolbarRef.bottom)
+                        start.linkTo(parent.start)
+                        end.linkTo(parent.end)
+                        bottom.linkTo(parent.bottom)
+                        height = androidx.constraintlayout.compose.Dimension.fillToConstraints
+                    }) {
+                ProvideTextStyle(value = AppTheme.typography.text_48PX_24SP_B) {
+                    Text(
+                        aboPayStringResource(id = R.string.shadowing),
+                        modifier = Modifier.padding(top = Dimens.size_100)
+                    )
+                }
+                ProvideTextStyle(value = AppTheme.typography.text_48PX_24SP_B) {
+                    Text(
+                        aboPayStringResource(id = R.string.create_an_account),
+                        modifier = Modifier.padding(top = Dimens.size_100)
+                    )
+                }
+                ProvideTextStyle(value = AppTheme.typography.text_16PX_21SP_B) {
+                    Text(
+                        aboPayStringResource(id = R.string.enter_your_email),
+                        modifier = Modifier.padding(top = Dimens.size_8)
+                    )
+                }
+                AppTextField(
+                    placeHolder = aboPayStringResource(id = R.string.email_placeholder),
+                    placeHolderAlignment = Alignment.CenterEnd,
+                    label = aboPayStringResource(id = R.string.email),
+                    onValueChange = {},
+                    value = "",
+                    modifier = Modifier.padding(
+                        top = Dimens.size_8,
+                        start = Dimens.size_12,
+                        end = Dimens.size_12
+                    ),
+
+                    )
+                AppButton(
+                    enabled = true,
+                    onClick = {
+                    },
+                    modifier = Modifier
+                        .align(
+                            Alignment.CenterHorizontally
+                        )
+                        .fillMaxWidth()
+                        .padding(Dimens.size_12)
+                ) {
+                    ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
+                        Text(aboPayStringResource(id = R.string.continue_btn))
+                    }
+                }
+                OrDivider()
+                AppButton(
+                    enabled = false,
+                    onClick = {
+                    },
+                    modifier = Modifier
+                        .align(
+                            Alignment.CenterHorizontally
+                        )
+                        .fillMaxWidth()
+                        .padding(Dimens.size_12)
+                ) {
+                    ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
+                        Text(aboPayStringResource(id = R.string.continue_with_google))
+                    }
+                }
+                AppButton(
+                    enabled = false,
+                    onClick = {
+                    },
+                    modifier = Modifier
+                        .align(
+                            Alignment.CenterHorizontally
+                        )
+                        .fillMaxWidth()
+                        .padding(Dimens.size_12)
+                ) {
+                    ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
+                        Text(aboPayStringResource(id = R.string.continue_with_apple))
+                    }
+                }
+                ProvideTextStyle(value = AppTheme.typography.text_16PX_21SP_B) {
+                    Text(
+                        aboPayStringResource(id = R.string.enter_your_email),
+                        modifier = Modifier.padding(top = Dimens.size_8)
+                    )
+                }
+
+            }
+        }
+    }
+
+    @Composable
+    fun OrDivider() {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(Dimens.size_12)
+        ) {
+            HorizontalDivider(
+                modifier = Modifier
+                    .weight(1f)
+                    .height(Dimens.size_1),
+                color = Color.Gray
+            )
+            Text(
+                text = "or",
+                modifier = Modifier.padding(horizontal = Dimens.size_8),
+                color = Color.Gray,
+                style = AppTheme.typography.text_8PX_10SP_B
+            )
+            HorizontalDivider(
+                modifier = Modifier
+                    .weight(1f)
+                    .height(Dimens.size_1),
+                color = Color.Gray
+            )
+        }
+    }
+
+
+    @Preview(showBackground = true)
+    @ThemePreviews
+    @Composable
+    fun PreviewFinndowHomeScreen() {
+        AppTheme {
+            MainContent()
+        }
+    }
+}
+

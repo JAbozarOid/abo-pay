@@ -1,4 +1,4 @@
-package com.jabozaroid.abopay.feature.finndow.model
+package com.jabozaroid.abopay.feature.finndow.model.finndow
 
 import com.jabozaroid.abopay.core.ui.model.IAction
 

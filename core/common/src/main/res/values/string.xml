@@ -283,7 +283,16 @@
 
     <!-- finndow -->
     <string name="finndow_title">Learning Finnish</string>
+    <string name="finndow_auth_title">Finndow App</string>
     <string name="shadowing_practices">Shadowing practices</string>
+    <string name="shadowing">Shadowing</string>
+    <string name="enter_your_email">Enter you email to singup for this app </string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="email_placeholder">email@domain.com</string>
+    <string name="email">Email</string>
+    <string name="continue_btn">Continue</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_apple">Continue with Apple</string>
 
 
 </resources>

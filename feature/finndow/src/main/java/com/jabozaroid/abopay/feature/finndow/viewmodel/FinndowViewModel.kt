@@ -2,7 +2,6 @@ package com.jabozaroid.abopay.feature.finndow.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.viewModelScope
-import com.jabozaroid.abopay.core.domain.model.charge.result.topup.OperatorItem
 import com.jabozaroid.abopay.core.domain.model.finndow.param.ShadowingPracticeParam
 import com.jabozaroid.abopay.core.domain.onAboPayApiError
 import com.jabozaroid.abopay.core.domain.onAboPayException
@@ -10,9 +9,9 @@ import com.jabozaroid.abopay.core.domain.onAboPaySuccess
 import com.jabozaroid.abopay.core.domain.usecase.finndow.GetShadowingPracticeUseCase
 import com.jabozaroid.abopay.core.ui.model.IEvent
 import com.jabozaroid.abopay.core.ui.viewmodel.BaseViewModel
-import com.jabozaroid.abopay.feature.finndow.model.FinndowAction
-import com.jabozaroid.abopay.feature.finndow.model.FinndowEvent
-import com.jabozaroid.abopay.feature.finndow.model.FinndowUiModel
+import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowAction
+import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowEvent
+import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.launch

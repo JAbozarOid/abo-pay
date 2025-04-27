@@ -1,4 +1,4 @@
-package com.jabozaroid.abopay.feature.finndow.view
+package com.jabozaroid.abopay.feature.finndow.view.finndow
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -23,9 +23,9 @@ import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
 import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
 import com.jabozaroid.abopay.core.ui.view.BaseScreen
-import com.jabozaroid.abopay.feature.finndow.model.FinndowAction
-import com.jabozaroid.abopay.feature.finndow.model.FinndowEvent
-import com.jabozaroid.abopay.feature.finndow.model.FinndowUiModel
+import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowAction
+import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowEvent
+import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowUiModel
 import com.jabozaroid.abopay.feature.finndow.viewmodel.FinndowViewModel
 
 class FinndowHomeScreen : BaseScreen<FinndowUiModel, FinndowAction, FinndowEvent>(
