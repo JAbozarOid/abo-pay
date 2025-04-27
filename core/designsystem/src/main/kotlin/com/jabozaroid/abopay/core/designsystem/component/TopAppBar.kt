@@ -25,9 +25,11 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.em
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
@@ -60,7 +62,8 @@ fun TopAppBar(
         title = {
             ProvideTextStyle(value = AppTheme.typography.text_9PX_12SP_B) {
                 Text(
-                    text = if (titleRes != null) aboPayStringResource(id = titleRes) else title ?: ""
+                    text = if (titleRes != null) aboPayStringResource(id = titleRes) else title
+                        ?: ""
                 )
             }
         },
@@ -105,6 +108,11 @@ fun AppToolbar(
     onRightIconClicked: () -> Unit,
     leftIcon: Int? = null,
     rightIcon: Int? = R.drawable.arrow_circle_left,
+    textStyle: TextStyle =
+        TextStyle(
+            fontFamily = AppTheme.typography.text_13PX_17SP_M.fontFamily,
+            fontWeight = FontWeight.W800,
+        )
 ) {
 
     Surface(
@@ -137,9 +145,7 @@ fun AppToolbar(
                 },
                 text = toolbarTitle,
                 color = AppTheme.colorScheme.aboTitleText,
-                style = AppTheme.typography.text_13PX_17SP_M.copy(
-                    fontWeight = FontWeight.W800
-                )
+                style = textStyle
             )
 
 

@@ -1,5 +1,7 @@
 package com.jabozaroid.abopay.feature.finndow.viewmodel
 
+import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
+import com.jabozaroid.abopay.core.ui.navigation.NavigationCommand
 import com.jabozaroid.abopay.core.ui.viewmodel.BaseViewModel
 import com.jabozaroid.abopay.feature.finndow.model.auth.FinndowAuthAction
 import com.jabozaroid.abopay.feature.finndow.model.auth.FinndowAuthEvent
@@ -21,10 +23,18 @@ class FinndowAuthViewModel @Inject constructor(
     override val onRefresh: () -> Unit = {}
 
     override fun handleAction(action: FinndowAuthAction) {
+        when(action) {
+            FinndowAuthAction.OnContinueClicked -> {
+                navigateToFinndowHome()
+            }
+        }
 
     }
 
 
+    private fun navigateToFinndowHome() {
+        navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.finndowHomeScreenRoute))
+    }
 
 
 }

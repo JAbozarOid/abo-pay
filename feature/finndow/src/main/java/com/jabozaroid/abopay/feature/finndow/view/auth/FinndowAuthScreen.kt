@@ -13,12 +13,19 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalLayoutDirection
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.jabozaroid.abopay.core.common.R
@@ -45,12 +52,19 @@ class FinndowAuthScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, Finn
     @Composable
     override fun Content(state: FinndowAuthUiModel) {
         val viewModel = ViewModel()
-
-        MainContent()
+        CompositionLocalProvider(value = LocalLayoutDirection provides LayoutDirection.Ltr) {
+            MainContent(
+                onContinueBtnClicked = {
+                    viewModel.process(FinndowAuthAction.OnContinueClicked)
+                }
+            )
+        }
     }
 
     @Composable
-    private fun MainContent() {
+    private fun MainContent(
+        onContinueBtnClicked: () -> Unit = {}
+    ) {
         ConstraintLayout(
             modifier = Modifier
                 .fillMaxSize()
@@ -60,6 +74,10 @@ class FinndowAuthScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, Finn
             val (toolbarRef, content) = createRefs()
             AppToolbar(
                 rightIcon = null,
+                textStyle = TextStyle(
+                    fontFamily = AppTheme.typography.text_48PX_24SP_B.fontFamily,
+                    fontSize = AppTheme.typography.text_48PX_24SP_B.fontSize
+                ),
                 modifier = Modifier
                     .constrainAs(toolbarRef) {
                         top.linkTo(parent.top)
@@ -98,22 +116,22 @@ class FinndowAuthScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, Finn
                         modifier = Modifier.padding(top = Dimens.size_100)
                     )
                 }
-                ProvideTextStyle(value = AppTheme.typography.text_48PX_24SP_B) {
+                ProvideTextStyle(value = AppTheme.typography.text_16PX_21SP_B) {
                     Text(
                         aboPayStringResource(id = R.string.create_an_account),
                         modifier = Modifier.padding(top = Dimens.size_100)
                     )
                 }
-                ProvideTextStyle(value = AppTheme.typography.text_16PX_21SP_B) {
+                ProvideTextStyle(value = AppTheme.typography.text_14PX_19SP_M) {
                     Text(
                         aboPayStringResource(id = R.string.enter_your_email),
                         modifier = Modifier.padding(top = Dimens.size_8)
                     )
                 }
                 AppTextField(
+                    textDirection = TextDirection.Ltr,
                     placeHolder = aboPayStringResource(id = R.string.email_placeholder),
-                    placeHolderAlignment = Alignment.CenterEnd,
-                    label = aboPayStringResource(id = R.string.email),
+                    placeHolderAlignment = Alignment.CenterStart,
                     onValueChange = {},
                     value = "",
                     modifier = Modifier.padding(
@@ -126,6 +144,7 @@ class FinndowAuthScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, Finn
                 AppButton(
                     enabled = true,
                     onClick = {
+                        onContinueBtnClicked()
                     },
                     modifier = Modifier
                         .align(
@@ -169,10 +188,15 @@ class FinndowAuthScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, Finn
                         Text(aboPayStringResource(id = R.string.continue_with_apple))
                     }
                 }
-                ProvideTextStyle(value = AppTheme.typography.text_16PX_21SP_B) {
+                ProvideTextStyle(value = AppTheme.typography.text_11PX_15SP_M) {
                     Text(
-                        aboPayStringResource(id = R.string.enter_your_email),
-                        modifier = Modifier.padding(top = Dimens.size_8)
+                        aboPayStringResource(id = R.string.terms_and_condition),
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.padding(
+                            top = Dimens.size_8,
+                            start = Dimens.size_12,
+                            end = Dimens.size_12
+                        )
                     )
                 }
 
