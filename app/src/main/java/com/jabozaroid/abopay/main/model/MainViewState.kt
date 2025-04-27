@@ -15,7 +15,7 @@ MainViewState(
     val darkThemeConfig: DarkThemeConfig = DarkThemeConfig.FOLLOW_SYSTEM,
     val themeBrand: ThemeBrand = ThemeBrand.ANDROID,
     val useDynamicColor: Boolean = false,
-    var startDestination: String = ApplicationRoutes.finndowAuthGraphRoute,
+    var startDestination: String = ApplicationRoutes.FINNDOW_AUTH_GRAPH_ROUTE,
     val user: User? = null,
     override val aboPayException: AboPayExceptionMessage = AboPayExceptionMessage(),
     override val aboPayApiError: AboPayServerError = AboPayServerError(),

@@ -9,20 +9,20 @@ import com.jabozaroid.abopay.core.domain.onAboPaySuccess
 import com.jabozaroid.abopay.core.domain.usecase.finndow.GetShadowingPracticeUseCase
 import com.jabozaroid.abopay.core.ui.model.IEvent
 import com.jabozaroid.abopay.core.ui.viewmodel.BaseViewModel
-import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowAction
-import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowEvent
-import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowUiModel
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeAction
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeEvent
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class FinndowViewModel @Inject constructor(
+class FinndowHomeViewModel @Inject constructor(
     private val getShadowingPracticeUseCase: GetShadowingPracticeUseCase,
 ) :
-    BaseViewModel<FinndowUiModel, FinndowAction, FinndowEvent>(
-        initialState = FinndowUiModel()
+    BaseViewModel<FinndowHomeUiModel, FinndowHomeAction, FinndowHomeEvent>(
+        initialState = FinndowHomeUiModel()
     ) {
 
     companion object {
@@ -31,9 +31,9 @@ class FinndowViewModel @Inject constructor(
 
     override val onRefresh: () -> Unit = {}
 
-    override fun handleAction(action: FinndowAction) {
+    override fun handleAction(action: FinndowHomeAction) {
         when (action) {
-            FinndowAction.OnRequestShadowingPractice -> {
+            FinndowHomeAction.OnRequestShadowingPractice -> {
                 requestGetShadowingPractice()
             }
         }

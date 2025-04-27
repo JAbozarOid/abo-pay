@@ -284,7 +284,7 @@
     <!-- finndow -->
     <string name="finndow_title">Learning Finnish</string>
     <string name="finndow_auth_title">Finndow App</string>
-    <string name="shadowing_practices">Shadowing Courses</string>
+    <string name="shadowing_courses">Shadowing Courses</string>
     <string name="exam_mode">Exam Mode</string>
     <string name="ai_subject_preparation">Ai Subject Preparation</string>
     <string name="progress">Progress</string>

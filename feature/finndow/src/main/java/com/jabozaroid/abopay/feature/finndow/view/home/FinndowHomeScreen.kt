@@ -1,4 +1,4 @@
-package com.jabozaroid.abopay.feature.finndow.view.finndow
+package com.jabozaroid.abopay.feature.finndow.view.home
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,24 +24,24 @@ import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens.size_0
 import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
 import com.jabozaroid.abopay.core.ui.view.BaseScreen
-import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowAction
-import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowEvent
-import com.jabozaroid.abopay.feature.finndow.model.finndow.FinndowUiModel
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeAction
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeEvent
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeUiModel
 import com.jabozaroid.abopay.feature.finndow.view.bottomsheet.FinndowHomeBottomNavigation
-import com.jabozaroid.abopay.feature.finndow.viewmodel.FinndowViewModel
+import com.jabozaroid.abopay.feature.finndow.viewmodel.FinndowHomeViewModel
 
-class FinndowHomeScreen : BaseScreen<FinndowUiModel, FinndowAction, FinndowEvent>(
-    route = ApplicationRoutes.finndowHomeScreenRoute, name = "FinndowHomeScreen"
+class FinndowHomeScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction, FinndowHomeEvent>(
+    route = ApplicationRoutes.FINNDOW_HOME_SCREEN_ROUTE, name = "FinndowHomeScreen"
 ) {
     @Composable
-    override fun ViewModel(): FinndowViewModel = hiltViewModel()
+    override fun ViewModel(): FinndowHomeViewModel = hiltViewModel()
 
     @Composable
-    override fun Content(state: FinndowUiModel) {
+    override fun Content(state: FinndowHomeUiModel) {
         val viewModel = ViewModel()
         MainContent(
             onShadowingPractices = {
-                viewModel.process(action = FinndowAction.OnRequestShadowingPractice)
+                viewModel.process(action = FinndowHomeAction.OnRequestShadowingPractice)
             })
     }
 
@@ -102,7 +102,7 @@ class FinndowHomeScreen : BaseScreen<FinndowUiModel, FinndowAction, FinndowEvent
                         )
                 ) {
                     ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
-                        Text(aboPayStringResource(id = R.string.shadowing_practices))
+                        Text(aboPayStringResource(id = R.string.shadowing_courses))
                     }
                 }
                 //endregion

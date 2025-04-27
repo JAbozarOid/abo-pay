@@ -24,8 +24,9 @@ object ApplicationRoutes {
     const val messengerGraphRoute = "messenger_graph_route"
     const val messengerDetailGraphRoute = "messenger_detail_graph_route"
 
-    const val finndowHomeGraphRoute = "finndow_home_graph_route"
-    const val finndowAuthGraphRoute = "finndow_auth_graph_route"
+    const val FINNDOW_HOME_GRAPH_ROUTE = "finndow_home_graph_route"
+    const val FINNDOW_AUTH_GRAPH_ROUTE = "finndow_auth_graph_route"
+    const val FINNDOW_SHADOWING_GRAPH_ROUTE = "finndow_shadowing_graph_route"
     //endregion
 
 
@@ -55,8 +56,9 @@ object ApplicationRoutes {
     const val messengerScreenRoute = "messenger_screen_route"
     const val messengerDetailScreenRoute = "messenger_detail_screen_route"
 
-    const val finndowHomeScreenRoute = "finndow_home_screen_route"
-    const val finndowAuthScreenRoute = "finndow_auth_screen_route"
+    const val FINNDOW_HOME_SCREEN_ROUTE = "finndow_home_screen_route"
+    const val FINNDOW_AUTH_SCREEN_ROUTE = "finndow_auth_screen_route"
+    const val FINNDOW_SHADOWING_SCREEN_ROUTE = "finndow_shadowing_screen_route"
     //endregion
 
     //region Params

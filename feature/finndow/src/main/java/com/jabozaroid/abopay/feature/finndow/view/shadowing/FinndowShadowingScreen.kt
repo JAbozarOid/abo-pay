@@ -1,4 +1,4 @@
-package com.jabozaroid.abopay.feature.finndow.view.auth
+package com.jabozaroid.abopay.feature.finndow.view.shadowing
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -40,8 +40,8 @@ import com.jabozaroid.abopay.feature.finndow.model.auth.FinndowAuthEvent
 import com.jabozaroid.abopay.feature.finndow.model.auth.FinndowAuthUiModel
 import com.jabozaroid.abopay.feature.finndow.viewmodel.FinndowAuthViewModel
 
-class FinndowAuthScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, FinndowAuthEvent>(
-    route = ApplicationRoutes.FINNDOW_AUTH_SCREEN_ROUTE, name = "FinndowAuthScreen"
+class FinndowShadowingScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, FinndowAuthEvent>(
+    route = ApplicationRoutes.FINNDOW_SHADOWING_SCREEN_ROUTE, name = "FinndowShadowingScreen"
 ) {
     @Composable
     override fun ViewModel(): FinndowAuthViewModel = hiltViewModel()
@@ -83,7 +83,7 @@ class FinndowAuthScreen : BaseScreen<FinndowAuthUiModel, FinndowAuthAction, Finn
                     }
                     .padding(top = Dimens.size_8)
                     .fillMaxWidth(),
-                toolbarTitle = aboPayStringResource(id = com.jabozaroid.abopay.core.common.R.string.finndow_auth_title),
+                toolbarTitle = aboPayStringResource(id = R.string.shadowing_courses),
                 onRightIconClicked = {}
             )
             Column(

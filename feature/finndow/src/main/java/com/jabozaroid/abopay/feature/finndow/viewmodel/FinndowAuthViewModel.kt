@@ -33,7 +33,7 @@ class FinndowAuthViewModel @Inject constructor(
 
 
     private fun navigateToFinndowHome() {
-        navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.finndowHomeScreenRoute))
+        navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.FINNDOW_HOME_SCREEN_ROUTE))
     }
 
 

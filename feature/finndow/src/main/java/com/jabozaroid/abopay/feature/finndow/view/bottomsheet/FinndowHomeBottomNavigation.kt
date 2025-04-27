@@ -39,7 +39,7 @@ import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens.size_0
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens.size_16
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens.size_8
 import com.jabozaroid.abopay.core.ui.DevicePreviews
-import com.jabozaroid.abopay.feature.finndow.model.finndow.BottomNavItem
+import com.jabozaroid.abopay.feature.finndow.model.home.HomeBottomNavItem
 
 /**
  * Created on 27,August,2024
@@ -49,24 +49,24 @@ internal fun FinndowHomeBottomNavigation() {
     var selectedTabIndex by rememberSaveable {
         mutableIntStateOf(2)
     }
-    val bottomNavItems = listOf(
-        BottomNavItem(
+    val homeBottomNavItems = listOf(
+        HomeBottomNavItem(
             aboPayStringResource(id = R.string.bottom_nav_item_profile_en),
             R.drawable.nav_item_profile
         ),
-        BottomNavItem(
+        HomeBottomNavItem(
             aboPayStringResource(id = R.string.bottom_nav_item_plus_en),
             R.drawable.nav_item_abo_pay_plus
         ),
-        BottomNavItem(
+        HomeBottomNavItem(
             aboPayStringResource(id = R.string.bottom_nav_item_home_en),
             R.drawable.nav_item_home
         ),
-        BottomNavItem(
+        HomeBottomNavItem(
             aboPayStringResource(id = R.string.bottom_nav_item_wallet_en),
             R.drawable.nav_item_wallet
         ),
-        BottomNavItem(
+        HomeBottomNavItem(
             aboPayStringResource(id = R.string.bottom_nav_item_services_en),
             R.drawable.nav_item_services
         )
@@ -83,7 +83,7 @@ internal fun FinndowHomeBottomNavigation() {
         val configuration = LocalConfiguration.current
         val screenWidth = configuration.screenWidthDp
         Spacer(modifier = Modifier.size((screenWidth / 14).dp, 60.dp))
-        bottomNavItems.forEachIndexed { index, bottomNavItem ->
+        homeBottomNavItems.forEachIndexed { index, bottomNavItem ->
             NavigationBarItem(
                 modifier = Modifier.padding(top = size_0),
                 selected = selectedTabIndex == index,
