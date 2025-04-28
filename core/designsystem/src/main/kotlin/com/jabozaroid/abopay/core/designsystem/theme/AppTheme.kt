@@ -7,10 +7,13 @@ import androidx.compose.material3.ripple
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDirection
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.sp
+import com.jabozaroid.abopay.core.designsystem.LanguageManager
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.AppBackground
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.AppColorScheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.AppShape
@@ -51,6 +54,9 @@ import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_20
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_40
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_80
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Red_100
+import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Blue_Light_50
+import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Orange_70
+import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Red_Blue_50
 
 
 private val darkColorScheme = AppColorScheme(
@@ -125,7 +131,11 @@ private val darkColorScheme = AppColorScheme(
     kahrobaHelperCircle = Gray_Dark_01,
     messengerDarkBackground = Messenger_Green_Dark,
     messengerLightBackground = Messenger_Green_Light,
-    messengerMessageOwnBg = Messenger_Message_Own
+    messengerMessageOwnBg = Messenger_Message_Own,
+    finndowBlueLight = Blue_Light_50,
+    finndowOrangeDark = Orange_70,
+    finndowRedBlue = Red_Blue_50,
+    finndowGreen = Green_100
 
 )
 
@@ -203,7 +213,11 @@ private val lightColorScheme = AppColorScheme(
     kahrobaHelperCircle = Gray_Dark_01,
     messengerDarkBackground = Messenger_Green_Dark,
     messengerLightBackground = Messenger_Green_Light,
-    messengerMessageOwnBg = Messenger_Message_Own
+    messengerMessageOwnBg = Messenger_Message_Own,
+    finndowBlueLight = Blue_Light_50,
+    finndowOrangeDark = Orange_70,
+    finndowRedBlue = Red_Blue_50,
+    finndowGreen = Green_100
 
 )
 
@@ -302,7 +316,12 @@ private val typography = AppTypography(
         fontFamily = DANA,
         fontWeight = FontWeight.Medium,
         fontSize = 21.sp
-    ).copy(textDirection = TextDirection.Rtl)
+    ).copy(textDirection = TextDirection.Rtl),
+    text_48PX_24SP_B = TextStyle(
+        fontFamily = DANA,
+        fontWeight = FontWeight.Bold,
+        fontSize = 24.sp
+    )
 )
 private val shape = AppShape(
     container = RoundedCornerShape(Dimens.size_12),
@@ -328,6 +347,7 @@ fun AppTheme(
         LocalAppShape provides shape,
         LocalIndication provides rippleIndication,
         LocalAppBackground provides background,
+        LocalLayoutDirection provides if (LanguageManager.isRTL) LayoutDirection.Rtl else LayoutDirection.Ltr,
         content = content
     )
 }

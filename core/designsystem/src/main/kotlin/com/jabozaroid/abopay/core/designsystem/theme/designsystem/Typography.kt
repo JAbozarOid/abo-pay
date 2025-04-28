@@ -33,6 +33,8 @@ data class AppTypography(
 
     val text_16PX_21SP_B: TextStyle,
     val text_16PX_21SP_M: TextStyle,
+
+    val text_48PX_24SP_B: TextStyle,
 )
 
 /**
@@ -66,5 +68,6 @@ val LocalAppTypographyScheme = staticCompositionLocalOf {
 
         text_16PX_21SP_M = TextStyle.Default,
         text_16PX_21SP_B = TextStyle.Default,
+        text_48PX_24SP_B = TextStyle.Default,
     )
 }

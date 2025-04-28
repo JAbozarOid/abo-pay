@@ -2,28 +2,29 @@ package com.jabozaroid.abopay.feature.finndow.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.viewModelScope
-import com.jabozaroid.abopay.core.domain.model.charge.result.topup.OperatorItem
 import com.jabozaroid.abopay.core.domain.model.finndow.param.ShadowingPracticeParam
 import com.jabozaroid.abopay.core.domain.onAboPayApiError
 import com.jabozaroid.abopay.core.domain.onAboPayException
 import com.jabozaroid.abopay.core.domain.onAboPaySuccess
 import com.jabozaroid.abopay.core.domain.usecase.finndow.GetShadowingPracticeUseCase
 import com.jabozaroid.abopay.core.ui.model.IEvent
+import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
+import com.jabozaroid.abopay.core.ui.navigation.NavigationCommand
 import com.jabozaroid.abopay.core.ui.viewmodel.BaseViewModel
-import com.jabozaroid.abopay.feature.finndow.model.FinndowAction
-import com.jabozaroid.abopay.feature.finndow.model.FinndowEvent
-import com.jabozaroid.abopay.feature.finndow.model.FinndowUiModel
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeAction
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeEvent
+import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class FinndowViewModel @Inject constructor(
+class FinndowHomeViewModel @Inject constructor(
     private val getShadowingPracticeUseCase: GetShadowingPracticeUseCase,
 ) :
-    BaseViewModel<FinndowUiModel, FinndowAction, FinndowEvent>(
-        initialState = FinndowUiModel()
+    BaseViewModel<FinndowHomeUiModel, FinndowHomeAction, FinndowHomeEvent>(
+        initialState = FinndowHomeUiModel()
     ) {
 
     companion object {
@@ -32,10 +33,14 @@ class FinndowViewModel @Inject constructor(
 
     override val onRefresh: () -> Unit = {}
 
-    override fun handleAction(action: FinndowAction) {
+    override fun handleAction(action: FinndowHomeAction) {
         when (action) {
-            FinndowAction.OnRequestShadowingPractice -> {
+            FinndowHomeAction.OnRequestShadowingPractice -> {
                 requestGetShadowingPractice()
+            }
+
+            FinndowHomeAction.OnShadowingPracticeBtnClicked -> {
+                navigateToShadowingPracticeScreen()
             }
         }
     }
@@ -62,7 +67,12 @@ class FinndowViewModel @Inject constructor(
                 it.copy(loading = true)
             }
 
-            getShadowingPracticeUseCase.execute(ShadowingPracticeParam(level = "beginner", type = "pronunciation"))
+            getShadowingPracticeUseCase.execute(
+                ShadowingPracticeParam(
+                    level = "beginner",
+                    type = "pronunciation"
+                )
+            )
                 .onAboPayException { throwable ->
                     Log.d(TAG, "getShadowingPracticeUseCase: onError: ${throwable.text}")
                     updateState {
@@ -89,5 +99,8 @@ class FinndowViewModel @Inject constructor(
         }
     }
 
+    private fun navigateToShadowingPracticeScreen() {
+        navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.FINNDOW_SHADOWING_SCREEN_ROUTE))
+    }
 
 }

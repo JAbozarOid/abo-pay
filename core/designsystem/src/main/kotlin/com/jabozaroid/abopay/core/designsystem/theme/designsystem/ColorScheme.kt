@@ -74,9 +74,12 @@ data class AppColorScheme(
 
     val messengerDarkBackground: Color,
     val messengerLightBackground: Color,
-    val messengerMessageOwnBg: Color
+    val messengerMessageOwnBg: Color,
 
-
+    val finndowBlueLight: Color,
+    val finndowOrangeDark: Color,
+    val finndowRedBlue: Color,
+    val finndowGreen: Color
 )
 
 /**
@@ -145,6 +148,10 @@ val LocalAppColorScheme = staticCompositionLocalOf {
         kahrobaHelperCircle = Color.Unspecified,
         messengerDarkBackground = Color.Unspecified,
         messengerLightBackground = Color.Unspecified,
-        messengerMessageOwnBg = Color.Unspecified
+        messengerMessageOwnBg = Color.Unspecified,
+        finndowBlueLight = Color.Unspecified,
+        finndowOrangeDark = Color.Unspecified,
+        finndowRedBlue = Color.Unspecified,
+        finndowGreen = Color.Unspecified
     )
 }
