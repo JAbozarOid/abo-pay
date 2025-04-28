@@ -297,6 +297,8 @@
     <string name="continue_with_google">Continue with Google</string>
     <string name="continue_with_apple">Continue with Apple</string>
     <string name="terms_and_condition">By clicking continue, you agree to our terms of service and privacy policy</string>
+    <string name="finnish_exercises">Finnish Exercises</string>
+    <string name="translate_in_english">English Translation</string>
 
     <string name="bottom_nav_item_profile_en">profile</string>
     <string name="bottom_nav_item_plus_en">plus</string>

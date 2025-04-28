@@ -40,14 +40,14 @@ class FinndowHomeScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction, Finn
     override fun Content(state: FinndowHomeUiModel) {
         val viewModel = ViewModel()
         MainContent(
-            onShadowingPractices = {
-                viewModel.process(action = FinndowHomeAction.OnRequestShadowingPractice)
+            onShadowingPracticeBtnClicked = {
+                viewModel.process(action = FinndowHomeAction.OnShadowingPracticeBtnClicked)
             })
     }
 
     @Composable
     private fun MainContent(
-        onShadowingPractices: () -> Unit = {},
+        onShadowingPracticeBtnClicked: () -> Unit = {},
     ) {
         Scaffold(
             containerColor = AppTheme.colorScheme.aboBackgroundScreen,
@@ -90,7 +90,7 @@ class FinndowHomeScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction, Finn
                     ),
                     enabled = true,
                     onClick = {
-                        onShadowingPractices()
+                        onShadowingPracticeBtnClicked()
                     },
                     modifier = Modifier
                         .align(
@@ -115,7 +115,7 @@ class FinndowHomeScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction, Finn
                     ),
                     enabled = true,
                     onClick = {
-                        onShadowingPractices()
+                        onShadowingPracticeBtnClicked()
                     },
                     modifier = Modifier
                         .align(
@@ -143,7 +143,7 @@ class FinndowHomeScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction, Finn
                     ),
                     enabled = true,
                     onClick = {
-                        onShadowingPractices()
+                        onShadowingPracticeBtnClicked()
                     },
                     modifier = Modifier
                         .align(
@@ -169,7 +169,7 @@ class FinndowHomeScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction, Finn
                     ),
                     enabled = true,
                     onClick = {
-                        onShadowingPractices()
+                        onShadowingPracticeBtnClicked()
                     },
                     modifier = Modifier
                         .align(

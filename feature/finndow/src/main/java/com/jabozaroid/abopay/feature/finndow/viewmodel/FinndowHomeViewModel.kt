@@ -8,6 +8,8 @@ import com.jabozaroid.abopay.core.domain.onAboPayException
 import com.jabozaroid.abopay.core.domain.onAboPaySuccess
 import com.jabozaroid.abopay.core.domain.usecase.finndow.GetShadowingPracticeUseCase
 import com.jabozaroid.abopay.core.ui.model.IEvent
+import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
+import com.jabozaroid.abopay.core.ui.navigation.NavigationCommand
 import com.jabozaroid.abopay.core.ui.viewmodel.BaseViewModel
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeAction
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeEvent
@@ -36,6 +38,10 @@ class FinndowHomeViewModel @Inject constructor(
             FinndowHomeAction.OnRequestShadowingPractice -> {
                 requestGetShadowingPractice()
             }
+
+            FinndowHomeAction.OnShadowingPracticeBtnClicked -> {
+                navigateToShadowingPracticeScreen()
+            }
         }
     }
 
@@ -61,7 +67,12 @@ class FinndowHomeViewModel @Inject constructor(
                 it.copy(loading = true)
             }
 
-            getShadowingPracticeUseCase.execute(ShadowingPracticeParam(level = "beginner", type = "pronunciation"))
+            getShadowingPracticeUseCase.execute(
+                ShadowingPracticeParam(
+                    level = "beginner",
+                    type = "pronunciation"
+                )
+            )
                 .onAboPayException { throwable ->
                     Log.d(TAG, "getShadowingPracticeUseCase: onError: ${throwable.text}")
                     updateState {
@@ -88,5 +99,8 @@ class FinndowHomeViewModel @Inject constructor(
         }
     }
 
+    private fun navigateToShadowingPracticeScreen() {
+        navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.FINNDOW_SHADOWING_SCREEN_ROUTE))
+    }
 
 }
