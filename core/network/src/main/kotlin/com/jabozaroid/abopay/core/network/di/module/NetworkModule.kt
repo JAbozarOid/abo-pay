@@ -27,6 +27,7 @@ import retrofit2.Retrofit
 //private const val BASE_URL = "http://172.24.34.95:1080/"
 //private const val BASE_URL = "http://172.24.34.67:3009/"
 private const val finndow_base_url = "http://192.168.1.17:4000/"
+private const val emulator_base_url = "http://10.0.2.2:4000/"
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -39,7 +40,7 @@ class NetworkModule {
         interceptorsMap: Map<Int, @JvmSuppressWildcards Interceptor>,
     ): Retrofit {
         return RetrofitHelper.createRetrofit(
-            finndow_base_url,
+            emulator_base_url,
             interceptorMap = interceptorsMap
         )
     }
