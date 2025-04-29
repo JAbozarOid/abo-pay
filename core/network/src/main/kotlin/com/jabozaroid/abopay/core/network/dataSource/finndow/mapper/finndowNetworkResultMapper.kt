@@ -7,5 +7,7 @@ fun ShadowingPracticeNetworkResult.mapToShadowingPracticeDomainModel(): Shadowin
     ShadowingPracticeResult(
         finnishText = this.finnishText,
         pronunciationGuide = this.pronunciationGuide,
-        englishTranslation = this.englishTranslation
+        englishTranslation = this.englishTranslation,
+        type = this.type,
+        level = this.level
     )

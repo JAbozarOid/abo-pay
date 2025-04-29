@@ -17,7 +17,7 @@ import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
 
 @Composable
-internal fun RecordButton() {
+fun RecordButton() {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxWidth()

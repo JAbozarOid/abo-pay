@@ -94,3 +94,5 @@ captures/
 /core/data/.idea/vcs.xml
 /core/data/.idea/workspace.xml
 /hs_err_pid8972.log
+
+/core/network/src/main/kotlin/com/jabozaroid/abopay/core/network/interceptor/ApiKey.kt

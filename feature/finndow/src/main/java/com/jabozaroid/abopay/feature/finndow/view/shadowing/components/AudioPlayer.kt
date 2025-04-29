@@ -31,7 +31,7 @@ import com.jabozaroid.abopay.feature.finndow.util.FormatUtil.Companion.formatTim
 import kotlinx.coroutines.delay
 
 @Composable
-internal fun AudioPlayer() {
+fun AudioPlayer() {
     val context = LocalContext.current
     val mediaPlayer = remember { MediaPlayer.create(context, R.raw.finn) }
 

@@ -9,6 +9,14 @@ data class FinndowHomeUiModel(
     override val hasError: Boolean = false,
     override val aboPayException: AboPayExceptionMessage = AboPayExceptionMessage(),
     override val aboPayApiError: AboPayServerError = AboPayServerError(),
-) : IViewState {
 
-}
+    val shadowingUiModel: ShadowingUiModel = ShadowingUiModel()
+) : IViewState
+
+data class ShadowingUiModel(
+    val finnishText: String? = "",
+    val pronunciationGuide: String? = "",
+    val englishTranslation: String? = "",
+    val type: String? = "",
+    val level: String? = ""
+)

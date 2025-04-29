@@ -42,6 +42,8 @@ class FinndowHomeViewModel @Inject constructor(
             FinndowHomeAction.OnShadowingPracticeBtnClicked -> {
                 navigateToShadowingPracticeScreen()
             }
+
+            FinndowHomeAction.NavigateUp -> navigateBack()
         }
     }
 
@@ -69,14 +71,14 @@ class FinndowHomeViewModel @Inject constructor(
 
             getShadowingPracticeUseCase.execute(
                 ShadowingPracticeParam(
-                    level = "beginner",
+                    level = "advance",
                     type = "pronunciation"
                 )
             )
                 .onAboPayException { throwable ->
                     Log.d(TAG, "getShadowingPracticeUseCase: onError: ${throwable.text}")
                     updateState {
-                        it.copy(loading = false, aboPayException = throwable)
+                        it.copy(loading = false, aboPayException = throwable, hasError = true)
                     }
                 }
                 .onAboPayApiError { apiError ->
@@ -94,6 +96,18 @@ class FinndowHomeViewModel @Inject constructor(
                 }
                 .onAboPaySuccess { result ->
                     Log.d(TAG, "getShadowingPracticeUseCase: onSuccess $result")
+                    updateState {
+                        it.copy(
+                            loading = false,
+                            shadowingUiModel = it.shadowingUiModel.copy(
+                                finnishText = result?.finnishText,
+                                pronunciationGuide = result?.pronunciationGuide,
+                                englishTranslation = result?.englishTranslation,
+                                level = result?.level,
+                                type = result?.type
+                            )
+                        )
+                    }
                 }
 
         }
