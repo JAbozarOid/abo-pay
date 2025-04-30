@@ -17,6 +17,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -38,6 +39,7 @@ import androidx.constraintlayout.compose.Dimension
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.jabozaroid.abopay.core.common.R
 import com.jabozaroid.abopay.core.common.util.aboPayStringResource
+import com.jabozaroid.abopay.core.designsystem.component.AppButton
 import com.jabozaroid.abopay.core.designsystem.component.AppToolbar
 import com.jabozaroid.abopay.core.designsystem.component.ThemePreviews
 import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
@@ -66,14 +68,23 @@ class FinndowShadowingScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction,
             viewModel.process(FinndowHomeAction.OnRequestShadowingPractice)
         }
         CompositionLocalProvider(value = LocalLayoutDirection provides LayoutDirection.Ltr) {
-            MainContent(state, onNavigateBack = {
-                viewModel.process(action = FinndowHomeAction.NavigateUp)
-            })
+            MainContent(
+                state, onNavigateBack = {
+                    viewModel.process(action = FinndowHomeAction.NavigateUp)
+                },
+                onNextPracticeBtnClicked = {
+                    viewModel.process(FinndowHomeAction.OnNextPracticeBtnClicked)
+                }
+            )
         }
     }
 
     @Composable
-    private fun MainContent(state: FinndowHomeUiModel, onNavigateBack: () -> Unit = {}) {
+    private fun MainContent(
+        state: FinndowHomeUiModel,
+        onNavigateBack: () -> Unit = {},
+        onNextPracticeBtnClicked: () -> Unit = {}
+    ) {
         val scrollState = rememberScrollState()
         ConstraintLayout(
             modifier = Modifier
@@ -259,6 +270,23 @@ class FinndowShadowingScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction,
                             )
                     }
                 }
+                AppButton(
+                    enabled = true,
+                    onClick = {
+                        onNextPracticeBtnClicked()
+                    },
+                    modifier = Modifier
+                        .align(
+                            Alignment.CenterHorizontally
+                        )
+                        .fillMaxWidth()
+                        .padding(Dimens.size_12)
+                ) {
+                    ProvideTextStyle(value = AppTheme.typography.text_12PX_16SP_M) {
+                        Text(aboPayStringResource(id = R.string.next_practice_btn))
+                    }
+                }
+
             }
 
             // Fixed Bottom Actions (AudioPlayer + RecordButton)
@@ -281,9 +309,9 @@ class FinndowShadowingScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction,
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Bottom
             ) {
-                Spacer(modifier = Modifier.height(Dimens.size_16))
+                Spacer(modifier = Modifier.height(Dimens.size_8))
                 AudioPlayer()
-                Spacer(modifier = Modifier.height(Dimens.size_16))
+                Spacer(modifier = Modifier.height(Dimens.size_8))
                 RecordButton()
             }
         }

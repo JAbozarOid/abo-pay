@@ -6,4 +6,5 @@ sealed interface FinndowHomeAction : IAction {
     data object OnRequestShadowingPractice : FinndowHomeAction
     data object OnShadowingPracticeBtnClicked : FinndowHomeAction
     data object NavigateUp : FinndowHomeAction
+    data object OnNextPracticeBtnClicked : FinndowHomeAction
 }

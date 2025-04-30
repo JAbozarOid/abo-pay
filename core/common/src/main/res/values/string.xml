@@ -294,6 +294,7 @@
     <string name="email_placeholder">email@domain.com</string>
     <string name="email">Email</string>
     <string name="continue_btn">Continue</string>
+    <string name="next_practice_btn">Next Practice</string>
     <string name="continue_with_google">Continue with Google</string>
     <string name="continue_with_apple">Continue with Apple</string>
     <string name="terms_and_condition">By clicking continue, you agree to our terms of service and privacy policy</string>

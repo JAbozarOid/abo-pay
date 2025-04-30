@@ -44,6 +44,9 @@ class FinndowHomeViewModel @Inject constructor(
             }
 
             FinndowHomeAction.NavigateUp -> navigateBack()
+            FinndowHomeAction.OnNextPracticeBtnClicked -> {
+                requestGetShadowingPractice()
+            }
         }
     }
 
