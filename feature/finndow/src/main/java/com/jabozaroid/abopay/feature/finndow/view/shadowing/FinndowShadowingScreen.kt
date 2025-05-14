@@ -74,6 +74,9 @@ class FinndowShadowingScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction,
                 },
                 onNextPracticeBtnClicked = {
                     viewModel.process(FinndowHomeAction.OnNextPracticeBtnClicked)
+                },
+                onRecordIconClick = {
+                    viewModel.process(FinndowHomeAction.OnRequestGetShadowingResult)
                 }
             )
         }
@@ -83,7 +86,8 @@ class FinndowShadowingScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction,
     private fun MainContent(
         state: FinndowHomeUiModel,
         onNavigateBack: () -> Unit = {},
-        onNextPracticeBtnClicked: () -> Unit = {}
+        onNextPracticeBtnClicked: () -> Unit = {},
+        onRecordIconClick : () -> Unit
     ) {
         val scrollState = rememberScrollState()
         ConstraintLayout(
@@ -312,7 +316,11 @@ class FinndowShadowingScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction,
                 Spacer(modifier = Modifier.height(Dimens.size_8))
                 AudioPlayer()
                 Spacer(modifier = Modifier.height(Dimens.size_8))
-                RecordButton()
+                RecordButton(
+                    onRecordIconClick = {
+                        onRecordIconClick()
+                    }
+                )
             }
         }
     }
@@ -323,7 +331,7 @@ class FinndowShadowingScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction,
     @Composable
     fun PreviewFinndowHomeScreen() {
         AppTheme {
-            MainContent(state = FinndowHomeUiModel(loading = true))
+            MainContent(state = FinndowHomeUiModel(loading = true), onRecordIconClick = {})
         }
     }
 }

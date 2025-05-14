@@ -33,7 +33,7 @@ import kotlinx.coroutines.delay
 @Composable
 fun AudioPlayer() {
     val context = LocalContext.current
-    val mediaPlayer = remember { MediaPlayer.create(context, R.raw.finn) }
+    val mediaPlayer = remember { MediaPlayer.create(context, R.raw.finn2) }
 
     var isPlaying by remember { mutableStateOf(false) }
     var progress by remember { mutableStateOf(0f) }

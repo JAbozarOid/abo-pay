@@ -6,12 +6,14 @@ import com.jabozaroid.abopay.core.ui.helper.registerDestination
 import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
 import com.jabozaroid.abopay.feature.finndow.view.auth.FinndowAuthScreen
 import com.jabozaroid.abopay.feature.finndow.view.home.FinndowHomeScreen
+import com.jabozaroid.abopay.feature.finndow.view.shadowing.FinndowShadowingResultScreen
 import com.jabozaroid.abopay.feature.finndow.view.shadowing.FinndowShadowingScreen
 
 
 val finndowAuthScreen = FinndowAuthScreen()
 val finndowHomeScreen = FinndowHomeScreen()
 val finndowShadowingScreen = FinndowShadowingScreen()
+val finndowShadowingResultScreen = FinndowShadowingResultScreen()
 
 fun NavGraphBuilder.finndowGraph() {
 
@@ -23,6 +25,7 @@ fun NavGraphBuilder.finndowGraph() {
         registerDestination(finndowAuthScreen)
         registerDestination(finndowHomeScreen)
         registerDestination(finndowShadowingScreen)
+        registerDestination(finndowShadowingResultScreen)
     }
 
 }

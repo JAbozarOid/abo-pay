@@ -7,15 +7,13 @@
     <application
         android:name="com.jabozaroid.abopay.application.Application"
         android:label="AboPay"
-        tools:replace="android:label"
-        android:icon="@mipmap/ic_launcher_round"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.Mark.Splash"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
         <activity
-            android:windowSoftInputMode="adjustPan|adjustResize"
             android:name="com.jabozaroid.abopay.main.view.MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

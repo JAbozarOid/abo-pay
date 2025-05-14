@@ -16,6 +16,7 @@ import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeEvent
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeUiModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -46,6 +47,18 @@ class FinndowHomeViewModel @Inject constructor(
             FinndowHomeAction.NavigateUp -> navigateBack()
             FinndowHomeAction.OnNextPracticeBtnClicked -> {
                 requestGetShadowingPractice()
+            }
+
+            FinndowHomeAction.OnRequestGetShadowingResult -> {
+                viewModelScope.launch {
+                    delay(8000)
+                    updateState {
+                        it.copy(loading = true)
+                    }
+                    navigateToShadowingResult()
+
+                }
+
             }
         }
     }
@@ -118,6 +131,10 @@ class FinndowHomeViewModel @Inject constructor(
 
     private fun navigateToShadowingPracticeScreen() {
         navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.FINNDOW_SHADOWING_SCREEN_ROUTE))
+    }
+
+    private fun navigateToShadowingResult() {
+        navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.FINNDOW_SHADOWING_RESULT_SCREEN_ROUTE))
     }
 
 }

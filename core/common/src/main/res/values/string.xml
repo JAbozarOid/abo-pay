@@ -285,6 +285,7 @@
     <string name="finndow_title">Learning Finnish</string>
     <string name="finndow_auth_title">Finndow App</string>
     <string name="shadowing_courses">Shadowing Courses</string>
+    <string name="shadowing_result">Feedback</string>
     <string name="exam_mode">Exam Mode</string>
     <string name="ai_subject_preparation">Ai Subject Preparation</string>
     <string name="progress">Progress</string>
@@ -301,6 +302,7 @@
     <string name="finnish_exercises">Finnish Exercises</string>
     <string name="translate_in_english">English Translation</string>
     <string name="pronunciation_guide">Pronunciation Guide</string>
+    <string name="feedback_str_result">Good effort! However, you slightly mispronounced “päänsärky” — the long vowel "ää" is important in Finnish. Otherwise, grammar and sentence structure were correct. Try to exaggerate vowel length to sound more natural.</string>
 
     <string name="bottom_nav_item_profile_en">profile</string>
     <string name="bottom_nav_item_plus_en">plus</string>

@@ -59,6 +59,7 @@ object ApplicationRoutes {
     const val FINNDOW_HOME_SCREEN_ROUTE = "finndow_home_screen_route"
     const val FINNDOW_AUTH_SCREEN_ROUTE = "finndow_auth_screen_route"
     const val FINNDOW_SHADOWING_SCREEN_ROUTE = "finndow_shadowing_screen_route"
+    const val FINNDOW_SHADOWING_RESULT_SCREEN_ROUTE = "finndow_shadowing_result_screen_route"
     //endregion
 
     //region Params
