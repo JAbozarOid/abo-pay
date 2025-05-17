@@ -19,7 +19,7 @@
 
     <style name="Theme.Mark.Splash" parent="NightAdjusted.Theme.Splash">
         <item name="windowSplashScreenBackground">#1d51b1</item>
-        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+<!--        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>-->
         <item name="postSplashScreenTheme">@style/Theme.Mark</item>
     </style>
 
