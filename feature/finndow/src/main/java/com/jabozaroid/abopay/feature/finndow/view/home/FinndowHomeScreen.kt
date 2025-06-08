@@ -41,7 +41,7 @@ class FinndowHomeScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction, Finn
         val viewModel = ViewModel()
         MainContent(
             onShadowingPracticeBtnClicked = {
-                viewModel.process(action = FinndowHomeAction.OnShadowingPracticeBtnClicked)
+                viewModel.process(action = FinndowHomeAction.OnShadowingCoursesBtnClicked)
             })
     }
 

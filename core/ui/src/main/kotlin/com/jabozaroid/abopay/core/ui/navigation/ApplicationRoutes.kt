@@ -60,6 +60,8 @@ object ApplicationRoutes {
     const val FINNDOW_AUTH_SCREEN_ROUTE = "finndow_auth_screen_route"
     const val FINNDOW_SHADOWING_SCREEN_ROUTE = "finndow_shadowing_screen_route"
     const val FINNDOW_SHADOWING_RESULT_SCREEN_ROUTE = "finndow_shadowing_result_screen_route"
+    const val FINNDOW_SHADOWING_COURSES_SCREEN_ROUTE = "finndow_shadowing_courses_screen_route"
+    const val FINNDOW_SHADOWING_COURSES_DETAIL_SCREEN_ROUTE = "finndow_shadowing_courses_detail_screen_route"
     //endregion
 
     //region Params
@@ -71,6 +73,8 @@ object ApplicationRoutes {
     val paymentConfirmationParam = "/{${NavigationParam.PAYMENT_CONFIRMATION_MODEL}}"
     val receiptModelParam = "/{${NavigationParam.RECEIPT_MODEL}}"
     val paymentModelParam = "/{${NavigationParam.PAYMENT_MODEL}}"
+
+    val shadowingCourseDetailParam = "/{${NavigationParam.SHADOWING_COURSE_DETAIL}}"
     //endregion
 
 }

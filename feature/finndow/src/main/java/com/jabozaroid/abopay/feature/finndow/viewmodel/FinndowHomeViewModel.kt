@@ -1,6 +1,7 @@
 package com.jabozaroid.abopay.feature.finndow.viewmodel
 
 import android.util.Log
+import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.viewModelScope
 import com.jabozaroid.abopay.core.domain.model.finndow.param.ShadowingPracticeParam
 import com.jabozaroid.abopay.core.domain.onAboPayApiError
@@ -10,10 +11,12 @@ import com.jabozaroid.abopay.core.domain.usecase.finndow.GetShadowingPracticeUse
 import com.jabozaroid.abopay.core.ui.model.IEvent
 import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
 import com.jabozaroid.abopay.core.ui.navigation.NavigationCommand
+import com.jabozaroid.abopay.core.ui.navigation.NavigationParam
 import com.jabozaroid.abopay.core.ui.viewmodel.BaseViewModel
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeAction
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeEvent
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeUiModel
+import com.jabozaroid.abopay.feature.finndow.model.home.ShadowingCoursesName
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.delay
@@ -40,8 +43,8 @@ class FinndowHomeViewModel @Inject constructor(
                 requestGetShadowingPractice()
             }
 
-            FinndowHomeAction.OnShadowingPracticeBtnClicked -> {
-                navigateToShadowingPracticeScreen()
+            FinndowHomeAction.OnShadowingCoursesBtnClicked -> {
+                navigateToShadowingCoursesScreen()
             }
 
             FinndowHomeAction.NavigateUp -> navigateBack()
@@ -59,6 +62,14 @@ class FinndowHomeViewModel @Inject constructor(
 
                 }
 
+            }
+
+            FinndowHomeAction.OnRequestShadowingCourses -> {
+                requestGetShadowingCourses()
+            }
+
+            is FinndowHomeAction.OnRequestShadowingCoursesDetail -> {
+                requestGetShadowingCoursesDetail(action.courseDetail)
             }
         }
     }
@@ -129,8 +140,40 @@ class FinndowHomeViewModel @Inject constructor(
         }
     }
 
-    private fun navigateToShadowingPracticeScreen() {
-        navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.FINNDOW_SHADOWING_SCREEN_ROUTE))
+    private fun requestGetShadowingCourses() {
+        updateState {
+            it.copy(
+                shadowingCoursesUiModel = it.shadowingCoursesUiModel.copy(
+                    shadowingCourses = listOf(
+                        ShadowingCoursesName(0, "Greetings", Color(0xFFFBBC05)),
+                        ShadowingCoursesName(1, "Shopping", Color(0xFF0DBC28)),
+                        ShadowingCoursesName(2, "Food", Color(0xFFFF5151)),
+                        ShadowingCoursesName(3, "Health", Color(0xFF30E1EE)),
+                        ShadowingCoursesName(4, "Work", Color(0xFFF485F4)),
+                        ShadowingCoursesName(5, "Education", Color(0xFFD1B711)),
+                        ShadowingCoursesName(6, "Routines", Color(0xFF9792F5)),
+                        ShadowingCoursesName(7, "Living", Color(0xFFEA7A8C)),
+                        ShadowingCoursesName(8, "Travel", Color(0xFF83CE66)),
+                        ShadowingCoursesName(9, "Technology", Color(0xFFB4ADB3)),
+                    )
+                )
+            )
+        }
+    }
+
+    private fun requestGetShadowingCoursesDetail(courseDetail : String) {
+        navigateTo(
+            NavigationCommand.ToWithData(
+                ApplicationRoutes.FINNDOW_SHADOWING_COURSES_DETAIL_SCREEN_ROUTE +
+                        ApplicationRoutes.shadowingCourseDetailParam,
+                linkedMapOf(Pair(NavigationParam.SHADOWING_COURSE_DETAIL, courseDetail))
+            )
+        )
+
+    }
+
+    private fun navigateToShadowingCoursesScreen() {
+        navigateTo(NavigationCommand.ToScreen(route = ApplicationRoutes.FINNDOW_SHADOWING_COURSES_SCREEN_ROUTE))
     }
 
     private fun navigateToShadowingResult() {
