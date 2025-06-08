@@ -12,6 +12,7 @@ enum class NavigationParam {
     OPERATOR_LOGO,
     PAYMENT_CONFIRMATION_MODEL,
     RECEIPT_MODEL,
+    SHADOWING_COURSE_DETAIL,
     PAYMENT_MODEL;
 
     companion object {

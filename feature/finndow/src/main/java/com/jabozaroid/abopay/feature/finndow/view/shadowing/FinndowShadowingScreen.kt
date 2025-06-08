@@ -16,7 +16,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ProvideTextStyle
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -26,14 +25,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.LayoutDirection
-import androidx.compose.ui.zIndex
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -46,13 +43,11 @@ import com.jabozaroid.abopay.core.designsystem.theme.AppTheme
 import com.jabozaroid.abopay.core.designsystem.theme.designsystem.Dimens
 import com.jabozaroid.abopay.core.ui.navigation.ApplicationRoutes
 import com.jabozaroid.abopay.core.ui.view.BaseScreen
-import com.jabozaroid.abopay.feature.finndow.model.auth.FinndowAuthAction
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeAction
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeEvent
 import com.jabozaroid.abopay.feature.finndow.model.home.FinndowHomeUiModel
 import com.jabozaroid.abopay.feature.finndow.view.shadowing.components.AudioPlayer
 import com.jabozaroid.abopay.feature.finndow.view.shadowing.components.RecordButton
-import com.jabozaroid.abopay.feature.finndow.viewmodel.FinndowAuthViewModel
 import com.jabozaroid.abopay.feature.finndow.viewmodel.FinndowHomeViewModel
 
 class FinndowShadowingScreen : BaseScreen<FinndowHomeUiModel, FinndowHomeAction, FinndowHomeEvent>(
